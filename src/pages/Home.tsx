@@ -1,20 +1,18 @@
-import AboutUs from "@/components/custom-components/about/AboutUs"
-import Navbar from "@/components/custom-components/Navbar"
-import Register from "@/components/custom-components/register/Register"
-import aboutUsData from "@/data/aboutUsData.json";
-import profileData from "@/data/profileData.json";
+import Register from "@/components/custom-components/register/Register";
+import AboutUs from "@/section/home/AboutUs";
+import HeroSection from "@/section/home/HeroSection";
+import profileData from "@/data/profileData.json"
 
 const Home = () => {
   return (
-    <div className='flex flex-col bg-white max-w-[1600px]'>
-      <Navbar/>
-      <AboutUs data={aboutUsData} />
-      <Register profiles={profileData} />
+    <div className="flex flex-col w-full justify-center items-center">
+      <div className="max-w-[1700px]">
+        <HeroSection />
+        <AboutUs />
+        <Register profiles={profileData} />
+      </div>
+    </div>
+  );
+};
 
-      
-      
-   </div>
-  )
-}
-
-export default Home
+export default Home;
