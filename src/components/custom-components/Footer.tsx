@@ -1,6 +1,5 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-// import googlePlayBadge from "src/assets/images/footer_section/playbutton.png";
 
 const Footer: React.FC = () => {
   return (

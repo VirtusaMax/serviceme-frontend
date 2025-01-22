@@ -16,7 +16,7 @@ interface AboutUsProps {
 const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
   return (
     <section className="bg-[#F6F1F1] text-left p-8">
-      <h2 className="font-bold mt-28 mb-2 text-3xl sm:text-4xl lg:text-5xl  text-yellow-400">ABOUT US</h2>
+      <h2 className="font-bold mt-8 mb-2 text-3xl sm:text-4xl lg:text-5xl  text-yellow-400">ABOUT US</h2>
       <div className="bg-yellow-400 mt-5 rounded-lg shadow-lg p-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mx-auto">
         {data.map((item, index) => (
           <div key={index} className="sm:text-left max-w-[282px] m-8">
