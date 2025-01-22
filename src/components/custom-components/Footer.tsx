@@ -1,6 +1,5 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-const googlePlayBadge = '/register_section/playbutton.png';
 
 const Footer: React.FC = () => {
   return (
@@ -61,7 +60,7 @@ const Footer: React.FC = () => {
               className="inline-flex items-center space-x-2"
             >
               <span className="text-sm">Get it on</span>
-              <img src={googlePlayBadge} alt="Google Play" className="w-5" />
+              {/* <img src={googlePlayBadge} alt="Google Play" className="w-5" /> */}
             </a>
           </div>
         </div>

@@ -13,7 +13,7 @@ const HowItWorks: React.FC = () => {
       <div className="absolute inset-0 bg-white bg-opacity-85"></div>
 
       <div className="relative z-10 w-full">
-        <h2 className="text-yellow-400 text-3xl font-extrabold mb-8 text-left">
+        <h2 className="text-yellow-400 text-5xl font-extrabold mb-8 text-left">
           HOW IT WORKS?
         </h2>
 
