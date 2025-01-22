@@ -10,6 +10,8 @@ const Home = () => {
       <Navbar/>
       <AboutUs data={aboutUsData} />
       <Register profiles={profileData} />
+      
+
 
       
       
