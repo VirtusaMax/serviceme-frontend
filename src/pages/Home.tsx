@@ -1,5 +1,7 @@
+import Register from "@/components/custom-components/register/Register";
 import AboutUs from "@/section/home/AboutUs";
 import HeroSection from "@/section/home/HeroSection";
+import profileData from "@/data/profileData.json"
 
 const Home = () => {
   return (
@@ -7,6 +9,7 @@ const Home = () => {
       <div className="max-w-[1700px]">
         <HeroSection />
         <AboutUs />
+        <Register profiles={profileData} />
       </div>
     </div>
   );

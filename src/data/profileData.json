@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Alex B.",
+      "img": "src/assets/images/register_section/man1.png"
+    },
+    {
+      "name": "Jessica",
+       "img": "src/assets/images/register_section/women4.png"
+    },
+    {
+      "name": "Chamen",
+      "img": "src/assets/images/register_section/man3.png"
+    },
+    {
+      "name": "Jacob",
+      "img": "src/assets/images/register_section/women2.png"
+    },
+    {
+      "name": "Jonathan",
+      "img": "src/assets/images/register_section/womenn1.png"
+    },
+    {
+      "name": "Alex B.",
+      "img": "src/assets/images/register_section/man1.png"
+    },
+    {
+      "name": "Jessica",
+      "img": "src/assets/images/register_section/man3.png"
+    },
+    {
+      "name": "Chamen",
+      "img": "src/assets/images/register_section/women3.png"
+    },
+    {
+      "name": "Jacob",
+      "img": "src/assets/images/register_section/man1.png"
+    },
+    {
+      "name": "Jonathan",
+      "img": "src/assets/images/register_section/man4.png"
+    }
+  ]
