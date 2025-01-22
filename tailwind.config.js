@@ -18,6 +18,14 @@ module.exports = {
     },
     extend: {
       colors: {
+        'custom-light': '#F6F1F1', // Add custom color here
+        'custom-yellow':'#FCC215',
+        'custom-blue':'#0E0524',
+        'custom-white':'#D9D9D9',
+        backgroundImage: {
+          'register-pattern': "url('assets/register_section/backlog.png')",
+         },
+      
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
