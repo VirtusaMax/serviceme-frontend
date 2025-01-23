@@ -5,6 +5,9 @@ import Register from "@/components/custom-components/register/Register"
 import aboutUsData from "@/data/aboutUsData.json";
 import profileData from "@/data/profileData.json";
 import HeroSection from "@/section/home/HeroSection";
+import Services from "@/section/home/Services";
+
+
 
 const Home = () => {
   return (
@@ -12,8 +15,10 @@ const Home = () => {
       <Navbar/>
       <HeroSection/>
       <AboutUs data={aboutUsData} />
+      <Services />
       <Register profiles={profileData} />
       <HowItWorks/>
+     
       
 
 
