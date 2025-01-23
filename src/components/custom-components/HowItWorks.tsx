@@ -1,5 +1,5 @@
 import React from "react";
-const backgroundImage = "src/assets/images/work_section/worksbg.png";
+import backgroundImage from "../../assets/images/work_section/worksbg.png";
 import ReactPlayer from "react-player";
 
 const HowItWorks: React.FC = () => {
@@ -13,7 +13,7 @@ const HowItWorks: React.FC = () => {
       <div className="absolute inset-0 bg-white bg-opacity-85"></div>
 
       <div className="relative z-10 w-full">
-        <h2 className="text-yellow-400 text-5xl font-extrabold mb-8 text-left">
+        <h2 className="text-yellow-400 text-3xl font-extrabold mb-8 text-left">
           HOW IT WORKS?
         </h2>
 
@@ -25,6 +25,9 @@ const HowItWorks: React.FC = () => {
               width="100%"
               height="100%"
               controls
+              playing={true} // Autoplay enabled
+              muted={true}
+              loop={true}
             />
           </div>
         </div>
