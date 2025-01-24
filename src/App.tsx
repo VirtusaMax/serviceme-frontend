@@ -2,6 +2,8 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
+import PostJob from "./pages/post_job";
+import FAQPage from "./pages/FaqPage";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
        
        <Routes>
          <Route path="/" element={<Home />} />   
+         <Route path="/postjob" element={<PostJob />} />
+         <Route path="/FAQ" element={<FAQPage />} />
        </Routes>
      </div>
     </Layout>

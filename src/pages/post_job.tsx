@@ -1,8 +1,6 @@
 import React from "react";
 import jobData from "../data/postJobCardData.json";
 
-//import TopNavbar from "../../../components/custom-components/TopNavBar";
-
 type JobData = {
   profileImage: string;
   name: string;
@@ -14,9 +12,9 @@ type JobData = {
 
 const PostJob: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen pt-20">
       {/* Header Section */}
-     {/* <TopNavbar /> */}
+      {/* <TopNavbar /> */}
 
       {/* Main Content Section */}
       <div className="flex flex-1 p-6 gap-4">

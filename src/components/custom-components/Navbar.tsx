@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Bars3BottomLeftIcon, XMarkIcon, UserCircleIcon } from '@heroicons/react/24/solid';
 import logo from "../../assets/images/header_section/logo1.png";
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const Links = [
@@ -52,12 +53,11 @@ const Navbar: React.FC = () => {
                     ))}
 
                     {/* POST JOB Button */}
-                    <button
-                        className='btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4'
-                        onClick={openModal}
-                    >
+                    <Link
+                         to="/postjob"
+                        className="btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4">
                         POST JOB
-                    </button>
+                    </Link>
                 </ul>
 
                 {/* User Circle Icon */}
