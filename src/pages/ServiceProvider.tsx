@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import JobCard from "../components/custom-components/service_provider/JobCard";
-import workprofile from "../assets/images/service_provider/workprofile.png";
+ 
+import workprofile from "../assets/images/service_provider/painter.jpg";
 import workprofile1 from "../assets/images/service_provider/workprofile1.png";
 import workprofile2 from "../assets/images/service_provider/workprofile2.jpg";
 import workprofile3 from "../assets/images/service_provider/workprofile3.png";
 import bg1 from "../assets/images/service_provider/bg1.png";
-import TopNavbar from "../components/custom-components/topNavbar/TopNavBar"; // Import TopNavbar
+import TopNavbar from "../components/custom-components/topNavbar/TopNavBar";
 import Navbar from "@/section/mainSection/Navbar";
 
 type Job = {
@@ -47,49 +48,59 @@ const ServiceProvider: React.FC = () => {
     },
   ];
 
-  const filteredJobs = selectedCategory === "ALL" ? jobs : jobs.filter(job => job.category === selectedCategory);
+  const filteredJobs = selectedCategory === "ALL" ? jobs : jobs.filter((job) => job.category === selectedCategory);
 
   return (
     <>
       {/* Navbar */}
-      <div className="bg-black text-white py-0.5 shadow-md">
+      <div className="bg-black text-white shadow-md">
         <Navbar />
       </div>
 
       {/* TopNavbar */}
-      <div className="fixed top-14 w-full z-40 bg-black text-white py-0.5 shadow-md pt-5">
+      <div className="fixed top-14 w-full z-40 bg-black text-white shadow-md pt-5">
         <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </div>
 
       {/* Main Content Section */}
-      <div className="container mx-auto px-4 pt-20 pb-6 mt-10">
-        <div className="pt-12 py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
-          {/* Left Section: Image */}
-          <div className="flex justify-center md:col-span-2 lg:col-span-1">
+      <div className="container mx-auto px-4 pt-28 pb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+          {/* Profile Image Section */}
+          <div className="flex justify-center lg:col-span-1">
             <img
               src={workprofile}
               alt="Worker"
-              className="object-cover rounded-lg w-full max-w-xs sm:max-w-sm lg:max-w-md"
+              className="object-cover rounded-lg w-full max-w-xs sm:max-w-sm lg:max-w-md shadow-lg"
             />
           </div>
 
-          {/* Right Section: Job Cards */}
+          {/* Job Cards Section */}
           <div
-            className="w-full h-full md:col-span-2 lg:col-span-2 bg-opacity-50 p-4 rounded-lg"
-            style={{ backgroundImage: `url(${bg1})` }}
+            className="lg:col-span-2 bg-opacity-50 p-6 rounded-lg shadow-lg"
+            style={{
+              backgroundImage: `url(${bg1})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            {filteredJobs.map((job, index) => (
-              <div className="pt-2" key={index}>
-                <JobCard
-                  name={job.name}
-                  location={job.location}
-                  phone={job.phone}
-                  date={job.date}
-                  profileImage={job.profileImage}
-                  category={job.category}
-                />
+            {filteredJobs.length > 0 ? (
+              filteredJobs.map((job, index) => (
+                <div className="mb-4" key={index}>
+                  <JobCard
+                    name={job.name}
+                    location={job.location}
+                    phone={job.phone}
+                    date={job.date}
+                    profileImage={job.profileImage}
+                    category={job.category}
+                  />
+                </div>
+              ))
+            ) : (
+              <div className="text-center text-white font-semibold">
+                No jobs available in this category.
               </div>
-            ))}
+            )}
           </div>
         </div>
       </div>

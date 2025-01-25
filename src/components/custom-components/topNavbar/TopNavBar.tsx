@@ -13,7 +13,7 @@ type TopNavbarProps = {
   setSelectedCategory: (category: string) => void;
 };
 
-const TopNavbar: React.FC<TopNavbarProps> = ({ setSelectedCategory }) => {
+const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCategory }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const categories: Category[] = [
@@ -28,12 +28,14 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ setSelectedCategory }) => {
   ];
 
   return (
-    <div className="flex items-center justify-between bg-gray-100 p-4 text-gray-800 shadow-sm">
-      {/* Left Section for Categories */}
+    <div className="flex items-center justify-between bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 p-4 text-amber-300 shadow-md">
+      {/* Categories Section */}
       <div className="hidden sm:flex sm:space-x-3">
         {/* 'ALL' Category */}
         <div
-          className="bg-white hover:bg-gray-200 p-2 w-12 h-12 flex items-center justify-center rounded-full shadow-sm cursor-pointer"
+          className={`p-3 w-14 h-14 flex items-center justify-center rounded-full cursor-pointer ${
+            selectedCategory === "ALL" ? "bg-amber-500 text-black" : "bg-gray-800 hover:bg-gray-600"
+          }`}
           onClick={() => setSelectedCategory("ALL")}
         >
           <span className="font-bold">ALL</span>
@@ -42,7 +44,9 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ setSelectedCategory }) => {
         {categories.map((item, index) => (
           <div
             key={index}
-            className="bg-white hover:bg-gray-200 p-2 w-12 h-12 flex items-center justify-center rounded-full shadow-sm cursor-pointer"
+            className={`p-3 w-14 h-14 flex items-center justify-center rounded-full cursor-pointer ${
+              selectedCategory === item.label ? "bg-amber-500 text-black" : "bg-gray-800 hover:bg-gray-600"
+            }`}
             onClick={() => setSelectedCategory(item.label)}
           >
             <span className="text-2xl">{item.icon}</span>
@@ -54,15 +58,15 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ setSelectedCategory }) => {
       <div className="sm:hidden relative">
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="bg-white p-2 rounded-lg shadow-sm hover:bg-gray-200 focus:outline-none"
+          className="bg-gray-800 text-amber-300 p-3 rounded-lg hover:bg-gray-600"
         >
-          <span className="text-gray-800 font-bold">Categories</span>
+          <span className="font-bold">Categories</span>
         </button>
         {isDropdownOpen && (
-          <div className="absolute bg-white shadow-lg mt-2 rounded-lg w-40">
+          <div className="absolute bg-gray-800 text-amber-300 shadow-lg mt-2 rounded-lg w-40">
             {/* Dropdown Item for 'ALL' */}
             <div
-              className="p-2 cursor-pointer hover:bg-gray-100"
+              className="p-2 cursor-pointer hover:bg-gray-600"
               onClick={() => {
                 setSelectedCategory("ALL");
                 setIsDropdownOpen(false);
@@ -74,30 +78,29 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ setSelectedCategory }) => {
             {categories.map((item, index) => (
               <div
                 key={index}
-                className="p-2 cursor-pointer hover:bg-gray-100"
+                className="p-2 cursor-pointer hover:bg-gray-600"
                 onClick={() => {
                   setSelectedCategory(item.label);
                   setIsDropdownOpen(false);
                 }}
               >
-                <span>{item.label}</span>
+                {item.label}
               </div>
             ))}
           </div>
         )}
       </div>
 
-      {/* Right Section for Actions */}
+      {/* Action Buttons */}
       <div className="flex items-center space-x-4">
-
         {/* Find Work Button */}
-        <button className="flex flex-col items-center bg-white hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-lg shadow-sm transition duration-300">
+        <button className="flex flex-col items-center bg-gray-800 hover:bg-gray-600 text-amber-300 px-4 py-2 rounded-lg shadow-sm transition duration-300">
           <MdSearch className="text-2xl mb-1" />
           <span className="text-sm font-bold">FIND WORK</span>
         </button>
         {/* Notifications Button */}
-        <button className="p-2 bg-white hover:bg-gray-200 rounded-full shadow-sm transition duration-300">
-          <FaBell className="text-2xl" />
+        <button className="p-3 bg-gray-800 hover:bg-gray-600 rounded-full shadow-sm transition duration-300">
+          <FaBell className="text-2xl text-amber-300" />
         </button>
       </div>
     </div>
