@@ -75,7 +75,7 @@ const Register: React.FC<RegisterProps> = ({ profiles }) => {
           >
             {profiles.map((profile, index) => (
               <SwiperSlide key={index} className="text-center">
-                <div className="relative mt-6 mb-12 bg-custom-blue border-4 border-custom-yellow rounded-xl shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105 overflow-hidden">
+                <div className="relative mt-6 mb-12 bg-custom-blue border-4 border-custom-white rounded-xl shadow-lg hover:shadow-xl transform transition-transform duration-300 hover:scale-105 overflow-hidden">
                   <img
                     src={profile.img}
                     alt={profile.name}
