@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiBroom, GiChefToque, GiPaintBrush, GiMechanicGarage, GiWrench, GiLipstick, GiBabyBottle, GiSteeringWheel } from "react-icons/gi";
 import { FaBell } from "react-icons/fa";
-import { MdWork, MdSearch } from "react-icons/md";
+import { MdSearch } from "react-icons/md";
 
 type Category = {
   icon: JSX.Element;
@@ -13,7 +13,7 @@ type TopNavbarProps = {
   setSelectedCategory: (category: string) => void;
 };
 
-const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCategory }) => {
+const TopNavbar: React.FC<TopNavbarProps> = ({ setSelectedCategory }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const categories: Category[] = [
