@@ -22,9 +22,7 @@ function App() {
          <Route path="/FAQ" element={<FAQPage />} />
          <Route path="/contact" element={<ContactPage />} />
          <Route path="/profile/:name" element={<ProfilePage />} />
-
-
- 
+       
        </Routes>
      </div>
     </Layout>
