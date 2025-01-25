@@ -2,7 +2,7 @@ import React from "react";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ServiceCard from "../../components/custom-components/ServiceCard";
+import ServiceCard from "../../components/custom-components/services/ServiceCard";
 import serviceCardData from "../../data/serviceCardData.json";
 import "../../index.css";
 
