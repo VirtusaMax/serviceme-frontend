@@ -6,18 +6,20 @@ import aboutUsData from "@/data/aboutUsData.json";
 import profileData from "@/data/profileData.json";
 import HeroSection from "@/section/home/HeroSection";
 import Services from "@/section/home/Services";
+import Footer from "@/section/mainSection/Footer";
 
 
 
 const Home = () => {
   return (
     <div className='flex flex-col bg-white max-w-[1600px]'>
-      <Navbar/>
+      
       <HeroSection/>
       <AboutUs data={aboutUsData} />
       <Services />
       <Register profiles={profileData} />
       <HowItWorks/>
+      <Footer/>
      
       
 
