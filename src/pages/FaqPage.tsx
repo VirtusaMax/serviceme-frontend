@@ -8,7 +8,7 @@ const FAQPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-200 min-h-screen">
+    <div className="bg-gray-200 min-h-screen pt-20">
       {/* Header Section */}
       <div className="bg-gray-200 h-[341px]">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center h-full">

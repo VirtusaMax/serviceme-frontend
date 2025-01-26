@@ -1944,7 +1944,7 @@ react-toastify@^11.0.3:
     react-router-dom "^7.1.3"
     react-slick "^0.30.3"
     react-toastify "^11.0.3"
-    react-vite-template "file:../../../../../AppData/Local/Yarn/Cache/v6/npm-react-vite-template-0.0.0-607ec6fa-15ad-44a3-850f-1de657f5140c-1737841882475/node_modules/react-vite-template"
+    react-vite-template "file:../../../../../AppData/Local/Yarn/Cache/v6/npm-react-vite-template-0.0.0-88dd3d3e-fd23-41f8-b560-40095ebb3924-1737902174129/node_modules/react-vite-template"
     slick-carousel "^1.8.1"
     sonner "^1.5.0"
     swiper "^11.2.1"
