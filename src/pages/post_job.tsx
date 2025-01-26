@@ -45,10 +45,10 @@ const PostJob: React.FC = () => {
                 {/* Edit and Delete Icons */}
                 <div className="absolute top-2 right-2 flex space-x-2">
                   <button className="text-bg-custom-blue hover:text-gray-500">
-                    <i className="fas fa-edit"></i> {/* Edit icon */}
+                    <i className="fas fa-edit"></i> 
                   </button>
                   <button className="text-bg-custom-blue hover:text-gray-500">
-                    <i className="fas fa-trash-alt"></i> {/* Delete icon */}
+                    <i className="fas fa-trash-alt"></i> 
                   </button>
                 </div>
 
@@ -69,7 +69,7 @@ const PostJob: React.FC = () => {
                 <p className="text-gray-700 mb-4 truncate">{job.description}</p>
                 <p className="text-gray-500 text-xs">Date: {job.date}</p>
 
-                <div className="flex justify-between mt-4 px-20 bg-custom-blue">
+                <div className="flex justify-between mt-4 px-30 bg-custom-blue">
                   <button className="bg-custom-blue px-10 py-2 rounded text-white">
                     Contact
                   </button>

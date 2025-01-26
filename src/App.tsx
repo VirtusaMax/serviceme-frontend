@@ -18,7 +18,7 @@ function App() {
  
          <Route path="/" element={<Home />} /> 
          <Route path="/serviceprovider" element={<ServiceProvider />} />
-         {/* <Route path="/postjob" element={<PostJob />} /> */}
+         <Route path="/postjob" element={<PostJob />} />
          <Route path="/FAQ" element={<FAQPage />} />
          <Route path="/contact" element={<ContactPage />} />
          <Route path="/profile/:name" element={<ProfilePage />} />
