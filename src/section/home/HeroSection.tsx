@@ -16,17 +16,17 @@ const HeroSection: React.FC = () => {
                     <p className='flex-wrap'>
                         New way to find people to do your jobs. If you are one of those thousands of people who struggle to find people to do jobs or struggle to find jobs, this is for you.
                     </p>
-                    <div className='space-x-2'>
+                    <div className='space-x-6'>
                         <button 
                             className='bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-full mt-2'
                         >
-                            I want to work
+                            Explore Opportunities
                         </button>
                         <button 
                             className='bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-full mt-2' 
                             onClick={() => navigate('PostJob')}
                         >
-                            I want to hire
+                            Find Professionals
                         </button>
                     </div>
                 </div>
@@ -37,7 +37,8 @@ const HeroSection: React.FC = () => {
                 <img
                     src={heroImg}
                     alt='Hero'
-                    className='max-w-full h-auto md:w-[100%]'
+                    // className='max-w-full h-auto md:w-[100%]'
+                    className='max-w-full h-auto w-[80%] md:w-[100%] lg:w-[100%]'
                 />
             </div>
         </div>
