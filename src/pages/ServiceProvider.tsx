@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import JobCard from "../components/custom-components/service_provider/JobCard";
- 
+
 import workprofile from "../assets/images/service_provider/painter.jpg";
 import workprofile1 from "../assets/images/service_provider/workprofile1.png";
 import workprofile2 from "../assets/images/service_provider/workprofile2.jpg";
@@ -64,7 +64,7 @@ const ServiceProvider: React.FC = () => {
 
       {/* Main Content Section */}
       <div className="container mx-auto px-4 pt-28 pb-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
           {/* Profile Image Section */}
           <div className="flex justify-center lg:col-span-1">
             <img
