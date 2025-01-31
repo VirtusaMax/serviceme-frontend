@@ -110,7 +110,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
       {/* Action Buttons */}
       <div className="flex items-center space-x-4">
         {/* Find Work Button */}
-        <button className="flex items-center gap-2 bg-blue-300 hover:bg-blue-500 text-white px-6 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+        <button className="flex items-center gap-2 bg-amber-300 hover:bg-amber-500 text-white px-6 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
           <MdSearch className="text-xl" />
           <span className="text-sm font-semibold">Find Work</span>
         </button>

@@ -6,7 +6,7 @@ import ServiceProvider from "./pages/ServiceProvider";
 import PostJob from "./pages/post_job";
 import FAQPage from "./pages/FaqPage";
 import ContactPage from "./pages/Contact";
-import ProfilePage from "./pages/ViewProfilePage";
+ 
 
 
 function App() {
@@ -21,8 +21,7 @@ function App() {
          <Route path="/postjob" element={<PostJob />} />
          <Route path="/FAQ" element={<FAQPage />} />
          <Route path="/contact" element={<ContactPage />} />
-         <Route path="/profile/:name" element={<ProfilePage />} />
-       
+        
        </Routes>
      </div>
     </Layout>

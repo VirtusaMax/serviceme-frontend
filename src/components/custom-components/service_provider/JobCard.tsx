@@ -9,34 +9,35 @@ interface JobCardProps {
   category: string;
 }
 
-const JobCard: React.FC<JobCardProps> = ({ name, location, phone, date, profileImage, category }) => {
+const JobCard: React.FC<JobCardProps> = ({
+  name,
+  location,
+  phone,
+  date,
+  profileImage,
+  category,
+}) => {
   return (
-    <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex flex-col sm:flex-row p-2 mb-3 border border-amber-400 opacity-90 hover:opacity-100">
-      {/* Profile Image Section */}
-      <div className="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden border-2 border-amber-500 hover:border-amber-400">
-        <img
-          src={profileImage}
-          alt="Profile"
-          className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
-        />
+    <div className="bg-black bg-opacity-70 text-white shadow-xl rounded-2xl overflow-hidden border border-gray-700 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] flex items-center p-6 space-x-6">
+      {/* Profile Image */}
+      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-white shadow-md">
+      <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
       </div>
 
-      {/* Text Section */}
-      <div className="ml-2 sm:ml-4 mt-2 sm:mt-0 flex flex-col justify-between flex-grow">
-        <h2 className="text-sm font-semibold text-white hover:text-amber-400 transition-colors">
-          {name}
-        </h2>
-        <p className="text-xs text-white mt-1 hover:text-amber-200">
-          Category: <span className="font-medium text-amber-400">{category}</span>
+      {/* Job Details */}
+      <div className="flex-grow">
+        <h2 className="text-lg font-semibold text-white">{name}</h2>
+        <p className="text-sm text-gray-400">
+          <span className="font-medium text-white">{category}</span>
         </p>
-        <p className="text-xs text-white mt-1 hover:text-amber-200">Location: {location}</p>
-        <p className="text-xs text-white mt-1 hover:text-amber-200">Phone: {phone}</p>
-        <p className="text-xxs text-white mt-1 hover:text-amber-200">Member since {date}</p>
+        <p className="text-sm text-gray-300">{location}</p>
+        <p className="text-sm text-gray-300">{phone}</p>
+        <p className="text-xs text-gray-500">Member since {date}</p>
       </div>
 
-      {/* Action Button */}
-      <div className="flex justify-center mt-2 sm:mt-0 sm:ml-auto">
-        <button className="bg-amber-500 text-gray-900 py-1 px-3 rounded-md shadow-md hover:bg-amber-600 hover:shadow-lg transition-transform duration-300 active:scale-95">
+      {/* View Profile Button */}
+      <div>
+        <button className="bg-white bg-opacity-80 text-black px-4 py-2 rounded-lg shadow-lg hover:bg-gray-200 hover:shadow-xl transition-all duration-300">
           View Profile
         </button>
       </div>
