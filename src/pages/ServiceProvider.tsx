@@ -48,7 +48,10 @@ const ServiceProvider: React.FC = () => {
     },
   ];
 
-  const filteredJobs = selectedCategory === "ALL" ? jobs : jobs.filter((job) => job.category === selectedCategory);
+  const filteredJobs =
+    selectedCategory === "ALL"
+      ? jobs
+      : jobs.filter((job) => job.category === selectedCategory);
 
   return (
     <>
@@ -59,7 +62,10 @@ const ServiceProvider: React.FC = () => {
 
       {/* TopNavbar */}
       <div className="fixed top-14 w-full z-40 bg-black text-white shadow-md pt-5">
-        <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
+        <TopNavbar
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+        />
       </div>
 
       {/* Main Content Section */}
@@ -70,7 +76,7 @@ const ServiceProvider: React.FC = () => {
             <img
               src={workprofile}
               alt="Worker"
-              className="object-cover rounded-lg w-full max-w-xs sm:max-w-sm lg:max-w-md shadow-lg"
+              className="object-cover rounded-lg w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl shadow-lg transition-all duration-300"
             />
           </div>
 
