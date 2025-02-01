@@ -5,8 +5,8 @@ import Home from "./pages/Home";
 import ServiceProvider from "./pages/ServiceProvider";
 import FAQPage from "./pages/FaqPage";
 import ContactPage from "./pages/Contact";
-import ProfilePage from "./pages/ViewProfilePage";
-import AboutUs from "./components/custom-components/about/AboutUs";
+import AboutUs from "./section/home/AboutUs";
+ 
 
 
 function App() {
@@ -17,15 +17,12 @@ function App() {
        <Routes>
  
          <Route path="/" element={<Home />} /> 
-         <Route path="/about" element={<AboutUs data={[]}/>} />
-         <Route path="/about-us" element={<AboutUs data={[]}/>} />
-
+         <Route path="/about-us" element={<AboutUs />} />
          <Route path="/serviceprovider" element={<ServiceProvider />} />
          {/* <Route path="/postjob" element={<PostJob />} /> */}
          <Route path="/FAQ" element={<FAQPage />} />
          <Route path="/contact" element={<ContactPage />} />
-         <Route path="/profile/:name" element={<ProfilePage />} />
-       
+        
        </Routes>
      </div>
     </Layout>

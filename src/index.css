@@ -11,6 +11,26 @@ html {    scrollbar-width: none; /* Firefox */
 /* Hide scrollbar for IE, Edge */body {
     -ms-overflow-style: none; /* IE and Edge */}
 
+    .slick-slide > div {
+        margin: 0 10px;
+    }
+    
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 2; 
+    }
+    
+    .slick-arrow svg {
+        stroke: #FCC21599; 
+        stroke-width: 3;
+    }
+    
+    
 
     .swiper-pagination {
         display: none !important;

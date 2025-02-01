@@ -56,6 +56,13 @@ const Navbar: React.FC = () => {
             </li>
           ))}
 
+                    {/* POST JOB Button */}
+                    <button
+                    className='btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4'
+                    // onClick={openModal}
+                    >
+                    POST JOB
+                    </button>
           {/* POST JOB Button */}
           <li className="md:ml-8 my-7 md:my-0">
             <Dialog.Root>
@@ -80,6 +87,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
