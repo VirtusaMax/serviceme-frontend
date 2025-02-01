@@ -5,69 +5,57 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-100 via-gray-50 to-white text-gray-800 min-h-screen">
+    <div className="bg-gray-50 text-gray-900 min-h-screen">
       {/* Navbar */}
-      <div className="bg-white text-gray-800 py-5 shadow-lg">
+      <header className="bg-white shadow-md sticky top-0 z-50 border-b border-gray-300">
         <Navbar />
-      </div>
+      </header>
 
       {/* Hero Section */}
-      <div
-        className="relative bg-cover bg-center py-24"
+      <section
+        className="relative bg-cover bg-center py-40 flex justify-center items-center"
         style={{ backgroundImage: `url(${bg1})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-5xl font-bold text-white drop-shadow-lg">
-            Contact Us
-          </h1>
-          <p className="text-lg md:text-xl text-white mt-3">
-            We're here to assist you. Reach out to us today!
-          </p>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="text-center relative z-10">
+          <h1 className="text-5xl font-bold text-white drop-shadow-lg">Contact Us</h1>
+          <p className="text-lg text-gray-200 mt-4">We'd love to hear from you. Reach out anytime!</p>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <main className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Form */}
-        <div className="bg-white p-8 rounded-lg shadow-xl border border-gray-200 transform transition-transform hover:scale-105">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Send Us a Message
-          </h2>
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-6">Send Us a Message</h2>
           <form className="space-y-6">
             <div>
-              <label className="block text-sm font-medium text-gray-600 mb-1">
-                Full Name
-              </label>
+              <label className="block text-lg font-medium text-gray-700 mb-2">Full Name</label>
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-800 border border-gray-300 focus:ring-2 focus:ring-indigo-500 outline-none transition-all duration-200"
+                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-600 mb-1">
-                Email Address
-              </label>
+              <label className="block text-lg font-medium text-gray-700 mb-2">Email Address</label>
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-800 border border-gray-300 focus:ring-2 focus:ring-indigo-500 outline-none transition-all duration-200"
+                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-600 mb-1">
-                Message
-              </label>
+              <label className="block text-lg font-medium text-gray-700 mb-2">Message</label>
               <textarea
                 placeholder="Write your message here"
                 rows={5}
-                className="w-full px-4 py-3 rounded-lg bg-gray-50 text-gray-800 border border-gray-300 focus:ring-2 focus:ring-indigo-500 outline-none transition-all duration-200"
+                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="bg-indigo-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 hover:shadow-lg transition duration-300 transform hover:scale-105"
+              className="w-full bg-gray-800 text-white px-6 py-3 rounded-md shadow-md hover:bg-gray-900 transition"
             >
               Submit
             </button>
@@ -75,36 +63,25 @@ const ContactPage: React.FC = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="bg-white p-8 rounded-lg shadow-xl border border-gray-200 transform transition-transform hover:scale-105">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Get in Touch
-          </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Have any questions or concerns? Feel free to contact us via email,
-            phone, or visit our office.
-          </p>
-          <div className="mt-6 space-y-6">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-6">Contact Details</h2>
+          <p className="text-lg text-gray-700">Have questions? Feel free to reach us through the following channels:</p>
+          <div className="mt-8 space-y-6">
             <div className="flex items-center space-x-4">
-              <FaEnvelope className="text-2xl text-indigo-400" />
-              <p className="text-lg text-gray-800 hover:text-indigo-400 transition">
-                service@company.com
-              </p>
+              <FaEnvelope className="text-2xl text-gray-700" />
+              <p className="text-lg text-gray-900 hover:text-gray-600 transition cursor-pointer">serviceme@company.com</p>
             </div>
             <div className="flex items-center space-x-4">
-              <FaPhone className="text-2xl text-indigo-400" />
-              <p className="text-lg text-gray-800 hover:text-indigo-400 transition">
-                +94 11 522####
-              </p>
+              <FaPhone className="text-2xl text-gray-700" />
+              <p className="text-lg text-gray-900 hover:text-gray-600 transition cursor-pointer">+94 11 522####</p>
             </div>
             <div className="flex items-center space-x-4">
-              <FaMapMarkerAlt className="text-2xl text-indigo-400" />
-              <p className="text-lg text-gray-800 hover:text-indigo-400 transition">
-                123 Main Street, Colombo 05
-              </p>
+              <FaMapMarkerAlt className="text-2xl text-gray-700" />
+              <p className="text-lg text-gray-900 hover:text-gray-600 transition cursor-pointer">123 Main Street, Colombo 05</p>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 };
