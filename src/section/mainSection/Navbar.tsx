@@ -56,29 +56,13 @@ const Navbar: React.FC = () => {
             </li>
           ))}
 
-                    {/* POST JOB Button */}
-                    <button
-                    className='btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4'
-                    // onClick={openModal}
-                    >
-                    POST JOB
-                    </button>
           {/* POST JOB Button */}
-          <li className="md:ml-8 my-7 md:my-0">
-            <Dialog.Root>
-              <Dialog.Trigger asChild>
-                <button className="bg-yellow-400 text-black py-1 px-3 rounded-xl hover:bg-cus transition-all">
-                  POST JOB
-                </button>
-              </Dialog.Trigger>
-              <Dialog.Portal>
-                <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-50" />
-                <Dialog.Content className="fixed inset-0 flex items-center justify-center">
-                  <PostJobDialogContent />
-                </Dialog.Content>
-              </Dialog.Portal>
-            </Dialog.Root>
-          </li>
+          <button
+            className="btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4"
+            // onClick={openModal}
+          >
+            POST JOB
+          </button>
         </ul>
 
         {/* User Circle Icon */}
@@ -87,7 +71,6 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </div>
-
   );
 };
 

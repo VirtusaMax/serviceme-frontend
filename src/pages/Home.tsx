@@ -4,22 +4,19 @@ import Register from "@/components/custom-components/register/Register";
 import aboutUsData from "@/data/aboutUsData.json";
 import profileData from "@/data/profileData.json";
 import HeroSection from "@/section/home/HeroSection";
-import Footer from "@/section/mainSection/Footer";
  
 
 
 const Home = () => {
   return (
-    <div className='flex flex-col bg-white max-w-[1600px]'>
-     
+    <div className="w-full flex justify-center">
+      <div className='w-full flex flex-col bg-white max-w-[1600px]'>
       <HeroSection/>
       <AboutUs data={aboutUsData} />
       <Register profiles={profileData} />
       <HowItWorks/>
-      <Footer/>
- 
-      
    </div>
+    </div>
   )
 }
 
