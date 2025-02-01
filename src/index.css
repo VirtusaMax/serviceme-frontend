@@ -31,3 +31,10 @@ html {    scrollbar-width: none; /* Firefox */
     }
     
     
+
+    .swiper-pagination {
+        display: none !important;
+      }
+      
+
+    
