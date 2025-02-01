@@ -13,7 +13,7 @@ import PostJobDialogContent from "@/components/dialog/PostJobDialogContent";
 const Navbar: React.FC = () => {
   const Links = [
     { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
+    { name: "About", link: "/about-us" },
     { name: "Contact", link: "/contact" },
     { name: "Services", link: "/services" },
   ];
