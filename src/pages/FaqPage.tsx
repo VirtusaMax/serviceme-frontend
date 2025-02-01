@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const FAQPage: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -8,15 +9,15 @@ const FAQPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-200 min-h-screen pt-20">
+    <div className="bg-gray-200 min-h-screen pt-15">
       {/* Header Section */}
-      <div className="bg-gray-200 h-auto lg:h-[341px]">
+      <div className="bg-gray-200 h-auto lg:h-[400px] pt-28">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start flex-wrap lg:flex-nowrap px-6 lg:px-0 h-full">
           <div className="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-800">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mt-10 lg:mt-16">
               FAQs
             </h1>
-            <p className="text-base sm:text-lg text-gray-600 mt-4">
+            <p className="text-base sm:text-lg text-gray-600 mt-6">
               Have questions? Here you’ll find the answers most valued by our
               partners, along with access to step-by-step instructions and
               support.
@@ -32,13 +33,10 @@ const FAQPage: React.FC = () => {
         </div>
       </div>
 
-      {/* FAQ Section */}
-      <div className="bg-white py-8 sm:py-16">
+      {/* FAQ Section with Animation */}
+      <div className="bg-white py-12 sm:py-20">
         <div className="max-w-6xl mx-auto px-6 sm:px-10">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">
-            About Us
-          </h2>
-          <div className="mt-8 space-y-4">
+          <div className="mt-10 space-y-6">
             {[
               {
                 question: "How will I manage my services?",
@@ -57,7 +55,7 @@ const FAQPage: React.FC = () => {
                   "Feel free to contact our support team via email or live chat. We're here to help!",
               },
             ].map((item, index) => (
-              <div key={index} className="border-b border-gray-300 pb-4">
+              <div key={index} className="border-b border-gray-300 pb-5">
                 <button
                   onClick={() => toggleAccordion(index)}
                   className="w-full text-left flex justify-between items-center text-gray-700 text-base sm:text-lg font-medium focus:outline-none"
@@ -97,10 +95,18 @@ const FAQPage: React.FC = () => {
                     )}
                   </span>
                 </button>
+
+                {/* Popup Animation for Answer */}
                 {activeIndex === index && (
-                  <p className="mt-4 text-sm sm:text-base text-gray-600">
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                    className="mt-4 text-sm sm:text-base text-gray-600"
+                  >
                     {item.answer}
-                  </p>
+                  </motion.div>
                 )}
               </div>
             ))}
