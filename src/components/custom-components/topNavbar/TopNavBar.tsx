@@ -22,13 +22,13 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
     { icon: <GiPaintBrush />, label: "Painter" },
     { icon: <GiMechanicGarage />, label: "Mechanic" },
     { icon: <GiWrench />, label: "Plumber" },
-    { icon: <GiLipstick />, label: "Beautician" }, // Replaced FaCut with GiLipstick
+    { icon: <GiLipstick />, label: "Beautician" },
     { icon: <MdChildCare />, label: "ChildCare" },
     { icon: <GiSteeringWheel />, label: "Driver" },
   ];
 
   return (
-    <div className="flex items-center justify-between bg-gradient-to-r from-gray-200 to-gray-300 p-4 text-gray-700 shadow-lg rounded-xl backdrop-blur-md">
+    <div className="flex items-center justify-between bg-gradient-to-r from-gray-200 to-gray-300 p-4 text-gray-700 shadow-lg rounded-xl backdrop-blur-md w-full">
       {/* Categories Section */}
       <div className="hidden sm:flex sm:space-x-3">
         {/* 'ALL' Category */}
@@ -82,7 +82,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
           <div className="absolute bg-gray-300 text-gray-700 shadow-lg mt-2 rounded-xl w-40 p-2 backdrop-blur-md">
             {/* Dropdown Item for 'ALL' */}
             <div
-              className="p-2 cursor-pointer hover:bg-gray-400 rounded-md transition-all duration-200"
+              className="p-2 cursor-pointer hover:bg-gray-700 hover:underline rounded-md transition-all duration-200"
               onClick={() => {
                 setSelectedCategory("ALL");
                 setIsDropdownOpen(false);
@@ -94,7 +94,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
             {categories.map((item, index) => (
               <div
                 key={index}
-                className="p-2 cursor-pointer hover:bg-gray-400 rounded-md transition-all duration-200"
+                className="p-2 cursor-pointer hover:bg-gray-400 hover:underline rounded-md transition-all duration-200"
                 onClick={() => {
                   setSelectedCategory(item.label);
                   setIsDropdownOpen(false);
@@ -121,7 +121,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
             <FaBell className="text-2xl text-gray-700" />
           </button>
           {/* Tooltip */}
-          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
+          <span className="absolute -top-15 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
             Notifications
           </span>
         </div>
