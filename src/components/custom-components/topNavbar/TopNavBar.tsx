@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { GiBroom, GiChefToque, GiPaintBrush, GiMechanicGarage, GiWrench, GiLipstick, GiBabyBottle, GiSteeringWheel } from "react-icons/gi";
+import { GiBroom, GiCookingPot, GiPaintBrush, GiMechanicGarage, GiWrench, GiSteeringWheel, GiLipstick } from "react-icons/gi"; // Import GiLipstick
 import { FaBell } from "react-icons/fa";
-import { MdSearch } from "react-icons/md";
+import { MdSearch, MdChildCare } from "react-icons/md"; // Import MdChildCare
 
 type Category = {
   icon: JSX.Element;
@@ -18,38 +18,54 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
 
   const categories: Category[] = [
     { icon: <GiBroom />, label: "Cleaner" },
-    { icon: <GiChefToque />, label: "Chef" },
+    { icon: <GiCookingPot />, label: "Chef" },
     { icon: <GiPaintBrush />, label: "Painter" },
     { icon: <GiMechanicGarage />, label: "Mechanic" },
     { icon: <GiWrench />, label: "Plumber" },
     { icon: <GiLipstick />, label: "Beautician" },
-    { icon: <GiBabyBottle />, label: "Child Care" },
+    { icon: <MdChildCare />, label: "ChildCare" },
     { icon: <GiSteeringWheel />, label: "Driver" },
   ];
 
   return (
-    <div className="flex items-center justify-between bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 p-4 text-amber-300 shadow-md">
+    <div className="flex items-center justify-between bg-gradient-to-r from-gray-200 to-gray-300 p-4 text-gray-700 shadow-lg rounded-xl backdrop-blur-md w-full">
       {/* Categories Section */}
       <div className="hidden sm:flex sm:space-x-3">
         {/* 'ALL' Category */}
-        <div
-          className={`p-3 w-14 h-14 flex items-center justify-center rounded-full cursor-pointer ${
-            selectedCategory === "ALL" ? "bg-amber-500 text-black" : "bg-gray-800 hover:bg-gray-600"
-          }`}
-          onClick={() => setSelectedCategory("ALL")}
-        >
-          <span className="font-bold">ALL</span>
-        </div>
-        {/* Render Other Categories */}
-        {categories.map((item, index) => (
+        <div className="relative group">
           <div
-            key={index}
-            className={`p-3 w-14 h-14 flex items-center justify-center rounded-full cursor-pointer ${
-              selectedCategory === item.label ? "bg-amber-500 text-black" : "bg-gray-800 hover:bg-gray-600"
+            className={`p-2 w-12 h-12 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-300 ${
+              selectedCategory === "ALL"
+                ? "bg-gray-400 text-white shadow-md scale-105"
+                : "bg-gray-300 hover:bg-gray-400 hover:scale-105"
             }`}
-            onClick={() => setSelectedCategory(item.label)}
+            onClick={() => setSelectedCategory("ALL")}
           >
-            <span className="text-2xl">{item.icon}</span>
+            <span className="font-bold text-sm">ALL</span>
+          </div>
+          {/* Tooltip */}
+          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
+            All Categories
+          </span>
+        </div>
+
+        {/* Other Categories */}
+        {categories.map((item, index) => (
+          <div key={index} className="relative group">
+            <div
+              className={`p-2 w-12 h-12 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-300 ${
+                selectedCategory === item.label
+                  ? "bg-gray-400 text-white shadow-md scale-105"
+                  : "bg-gray-300 hover:bg-gray-400 hover:scale-105"
+              }`}
+              onClick={() => setSelectedCategory(item.label)}
+            >
+              <span className="text-xl">{item.icon}</span>
+            </div>
+            {/* Tooltip */}
+            <span className="absolute -top-15 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
+              {item.label}
+            </span>
           </div>
         ))}
       </div>
@@ -58,15 +74,15 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
       <div className="sm:hidden relative">
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="bg-gray-800 text-amber-300 p-3 rounded-lg hover:bg-gray-600"
+          className="bg-gray-300 text-gray-700 p-3 rounded-xl hover:bg-gray-400 transition-all duration-300"
         >
           <span className="font-bold">Categories</span>
         </button>
         {isDropdownOpen && (
-          <div className="absolute bg-gray-800 text-amber-300 shadow-lg mt-2 rounded-lg w-40">
+          <div className="absolute bg-gray-300 text-gray-700 shadow-lg mt-2 rounded-xl w-40 p-2 backdrop-blur-md">
             {/* Dropdown Item for 'ALL' */}
             <div
-              className="p-2 cursor-pointer hover:bg-gray-600"
+              className="p-2 cursor-pointer hover:bg-gray-700 hover:underline rounded-md transition-all duration-200"
               onClick={() => {
                 setSelectedCategory("ALL");
                 setIsDropdownOpen(false);
@@ -78,7 +94,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
             {categories.map((item, index) => (
               <div
                 key={index}
-                className="p-2 cursor-pointer hover:bg-gray-600"
+                className="p-2 cursor-pointer hover:bg-gray-400 hover:underline rounded-md transition-all duration-200"
                 onClick={() => {
                   setSelectedCategory(item.label);
                   setIsDropdownOpen(false);
@@ -94,14 +110,21 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
       {/* Action Buttons */}
       <div className="flex items-center space-x-4">
         {/* Find Work Button */}
-        <button className="flex flex-col items-center bg-gray-800 hover:bg-gray-600 text-amber-300 px-4 py-2 rounded-lg shadow-sm transition duration-300">
-          <MdSearch className="text-2xl mb-1" />
-          <span className="text-sm font-bold">FIND WORK</span>
+        <button className="flex items-center gap-2 bg-amber-300 hover:bg-amber-500 text-white px-6 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+          <MdSearch className="text-xl" />
+          <span className="text-sm font-semibold">Find Work</span>
         </button>
+
         {/* Notifications Button */}
-        <button className="p-3 bg-gray-800 hover:bg-gray-600 rounded-full shadow-sm transition duration-300">
-          <FaBell className="text-2xl text-amber-300" />
-        </button>
+        <div className="relative group">
+          <button className="p-3 bg-gray-300 hover:bg-gray-400 rounded-full shadow-md transition-all duration-300 transform hover:scale-110">
+            <FaBell className="text-2xl text-gray-700" />
+          </button>
+          {/* Tooltip */}
+          <span className="absolute -top-15 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
+            Notifications
+          </span>
+        </div>
       </div>
     </div>
   );

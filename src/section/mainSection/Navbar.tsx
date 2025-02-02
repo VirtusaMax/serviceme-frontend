@@ -53,11 +53,12 @@ const Navbar: React.FC = () => {
                     ))}
 
                     {/* POST JOB Button */}
-                    <Link
-                         to="/postjob"
-                        className="btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4">
-                        POST JOB
-                    </Link>
+                    <button
+                    className='btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4'
+                    onClick={openModal}
+                    >
+                    POST JOB
+                    </button>
                 </ul>
 
                 {/* User Circle Icon */}
