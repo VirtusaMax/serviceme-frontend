@@ -17,6 +17,12 @@ const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
       className="relative isolate overflow-hidden text-white bg-cover bg-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100%",
+        height: "auto",
+        minHeight: "500px", // Fixed minimum height
+        maxHeight: "700px", // Maximum height for large screens
       }}
     >
       {/* Overlay */}
@@ -33,8 +39,8 @@ const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
       </div>
 
       {/* Cards Section */}
-      <div className="text-black py-12 px-6 sm:px-8 lg:px-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mx-auto max-w-7xl">
+      <div className="text-black py-12 px-6 sm:px-8 lg:px-16 flex justify-center items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 max-w-screen-xl">
           {data.map((item, index) => (
             <div
               key={index}
