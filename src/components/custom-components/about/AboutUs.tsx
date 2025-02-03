@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "@/assets/images/about_section/about.png";
+import backgroundImage from "@/assets/images/about_section/about1.png";
 
 interface AboutUsItem {
   icon: string;
@@ -14,13 +14,9 @@ interface AboutUsProps {
 const AboutUs: React.FC<AboutUsProps> = ({ data }) => {
   return (
     <section
-      className="relative isolate overflow-hidden text-white"
+      className="relative isolate overflow-hidden text-white bg-cover bg-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "60vh", // Ensures minimum height on smaller screens
       }}
     >
       {/* Overlay */}

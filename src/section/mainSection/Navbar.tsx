@@ -1,4 +1,3 @@
-// src/components/custom-components/Navbar.tsx
 import React, { useState } from "react";
 import {
   Bars3BottomLeftIcon,
@@ -40,7 +39,7 @@ const Navbar: React.FC = () => {
         <ul
           className={`md:flex md:items-center md:ml-auto md:pb-0 pb-14 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-12 transition-all bg-[#0E0524] text-white duration-500 ease-in ${
             isOpen ? "top-14" : "top-[-490px]"
-          }`}
+          } space-x-4`}
         >
           {Links.map((link, index) => (
             <li
@@ -56,18 +55,11 @@ const Navbar: React.FC = () => {
             </li>
           ))}
 
-                    {/* POST JOB Button */}
-                    <button
-                    className='btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4'
-                    // onClick={openModal}
-                    >
-                    POST JOB
-                    </button>
           {/* POST JOB Button */}
           <li className="md:ml-8 my-7 md:my-0">
             <Dialog.Root>
               <Dialog.Trigger asChild>
-                <button className="bg-yellow-400 text-black py-1 px-3 rounded-xl hover:bg-cus transition-all">
+                <button className="bg-yellow-400 text-black py-1 px-3 rounded-xl hover:bg-yellow-500 transition-all">
                   POST JOB
                 </button>
               </Dialog.Trigger>
@@ -79,15 +71,14 @@ const Navbar: React.FC = () => {
               </Dialog.Portal>
             </Dialog.Root>
           </li>
-        </ul>
 
-        {/* User Circle Icon */}
-        <div className="absolute right-4 top-6 md:static md:right-auto">
-          <UserCircleIcon className="w-10 h-10 text-white cursor-pointer hover:text-yellow-400 transition-all" />
-        </div>
+          {/* User Circle Icon */}
+          <li className="md:ml-8 my-7 md:my-0">
+            <UserCircleIcon className="w-10 h-10 text-white cursor-pointer hover:text-yellow-400 transition-all" />
+          </li>
+        </ul>
       </div>
     </div>
-
   );
 };
 
