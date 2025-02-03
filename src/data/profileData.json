@@ -1,44 +1,92 @@
 [
   {
     "name": "Jessica",
-     "img": "src/assets/images/register_section/women4.png"
+    "img": "src/assets/images/register_section/women4.png",
+    "role": "Car Detailer",
+    "location": "Los Angeles, CA",
+    "contact": "+1 123 456 789",
+    "rating": 4.7,
+    "reviews": 95
   },
-    {
-      "name": "Alex B.",
-      "img": "src/assets/images/register_section/man1.png"
-    },
-    
-    {
-      "name": "Chamen",
-      "img": "src/assets/images/register_section/man3.png"
-    },
-    {
-      "name": "Jacob",
-      "img": "src/assets/images/register_section/man2.png"
-    },
-    {
-      "name": "Jonathan",
-      "img": "src/assets/images/register_section/womenn1.png"
-    },
-    {
-      "name": "Jessica",
-      "img": "src/assets/images/register_section/women3.png"
-    },
-    {
-      "name": "Alex B.",
-      "img": "src/assets/images/register_section/women2.png"
-    },
-    
-    {
-      "name": "Chamen",
-      "img": "src/assets/images/register_section/women3.png"
-    },
-    {
-      "name": "Jacob",
-      "img": "src/assets/images/register_section/man1.png"
-    },
-    {
-      "name": "Jonathan",
-      "img": "src/assets/images/register_section/man4.png"
-    }
-  ]
+  {
+    "name": "Alex B.",
+    "img": "src/assets/images/register_section/man1.png",
+    "role": "Mechanic",
+    "location": "New York, NY",
+    "contact": "+1 234 567 890",
+    "rating": 4.8,
+    "reviews": 120
+  },
+  {
+    "name": "Chamen",
+    "img": "src/assets/images/register_section/man3.png",
+    "role": "Oil Change Specialist",
+    "location": "San Francisco, CA",
+    "contact": "+1 345 678 901",
+    "rating": 4.6,
+    "reviews": 85
+  },
+  {
+    "name": "Jacob",
+    "img": "src/assets/images/register_section/man2.png",
+    "role": "Tire Technician",
+    "location": "Chicago, IL",
+    "contact": "+1 456 789 012",
+    "rating": 4.9,
+    "reviews": 130
+  },
+  {
+    "name": "Jonathan",
+    "img": "src/assets/images/register_section/womenn1.png",
+    "role": "Battery Replacement Expert",
+    "location": "Miami, FL",
+    "contact": "+1 567 890 123",
+    "rating": 4.5,
+    "reviews": 78
+  },
+  {
+    "name": "Jessica",
+    "img": "src/assets/images/register_section/women3.png",
+    "role": "Car Detailer",
+    "location": "Seattle, WA",
+    "contact": "+1 678 901 234",
+    "rating": 4.8,
+    "reviews": 102
+  },
+  {
+    "name": "Alex B.",
+    "img": "src/assets/images/register_section/women2.png",
+    "role": "Mechanic",
+    "location": "Houston, TX",
+    "contact": "+1 789 012 345",
+    "rating": 4.7,
+    "reviews": 88
+  },
+  {
+    "name": "Chamen",
+    "img": "src/assets/images/register_section/women3.png",
+    "role": "Oil Change Specialist",
+    "location": "Denver, CO",
+    "contact": "+1 890 123 456",
+    "rating": 4.6,
+    "reviews": 92
+  },
+  {
+    "name": "Jacob",
+    "img": "src/assets/images/register_section/man1.png",
+    "role": "Tire Technician",
+    "location": "Boston, MA",
+    "contact": "+1 901 234 567",
+    "rating": 4.9,
+    "reviews": 105
+  },
+  {
+    "name": "Jonathan",
+    "img": "src/assets/images/register_section/man4.png",
+    "role": "Battery Replacement Expert",
+    "location": "San Diego, CA",
+    "contact": "+1 012 345 678",
+    "rating": 4.5,
+    "reviews": 80
+  }
+]
