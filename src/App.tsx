@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import ServiceProvider from "./pages/ServiceProvider";
 import FAQPage from "./pages/FaqPage";
 import ContactPage from "./pages/Contact";
-import AboutUs from "./section/home/AboutUs";
+import AboutUsPage from "./pages/AboutUs";
  
 
 
@@ -17,7 +17,7 @@ function App() {
        <Routes>
  
          <Route path="/" element={<Home />} /> 
-         <Route path="/about-us" element={<AboutUs />} />
+         <Route path="/about-us" element={<AboutUsPage />} />
          <Route path="/serviceprovider" element={<ServiceProvider />} />
          {/* <Route path="/postjob" element={<PostJob />} /> */}
          <Route path="/FAQ" element={<FAQPage />} />
