@@ -1,6 +1,7 @@
 import React from "react";
 import aboutUsData from "../../data/aboutUsData.json";
 
+
 interface AboutUsItem {
   icon: string;
   title: string;
