@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Bars3BottomLeftIcon, XMarkIcon, UserCircleIcon } from '@heroicons/react/24/solid';
 import logo from "../../assets/images/header_section/logo1.png";
-import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const Links = [
