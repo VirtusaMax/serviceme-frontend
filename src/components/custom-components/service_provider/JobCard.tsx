@@ -18,28 +18,32 @@ const JobCard: React.FC<JobCardProps> = ({
   category,
 }) => {
   return (
-    <div className="bg-black bg-opacity-70 text-white shadow-xl rounded-2xl overflow-hidden border border-gray-700 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] flex items-center p-6 space-x-6">
-      {/* Profile Image */}
-      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-white shadow-md">
-        <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
+    <div className="w-72 bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
+      {/* Header Section with Gradient Background */}
+      <div className="bg-gradient-to-r bg-black text-white p-6 relative flex justify-between items-center">
+        {/* Profile Image */}
+        <div className="w-12 h-12 rounded-full border-2 border-white overflow-hidden">
+          <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
+        </div>
+        {/* Name and Category on Right */}
+        <div className="text-right">
+          <h3 className="text-xl font-semibold">{name}</h3>
+          <p className="text-sm mt-1">{category}</p>
+        </div>
       </div>
 
-      {/* Job Details */}
-      <div className="flex-grow">
-        <h2 className="text-lg font-semibold text-white">{name}</h2>
-        <p className="text-sm text-gray-400">
-          <span className="font-medium text-white">{category}</span>
-        </p>
-        <p className="text-sm text-gray-300">{location}</p>
-        <p className="text-sm text-gray-300">{phone}</p>
-        <p className="text-xs text-gray-500">Member since {date}</p>
-      </div>
+      {/* Main Content */}
+      <div className="p-4">
+        <h4 className="text-lg font-bold">{location}</h4>
+        <p className="text-sm text-gray-500">📞 {phone}</p>
+        <p className="text-xs text-gray-400 mt-1">Member since {date}</p>
 
-      {/* View Profile Button (Smaller Size) */}
-      <div>
-        <button className="bg-white bg-opacity-80 text-black text-xs px-3 py-1 rounded-md shadow-md hover:bg-gray-200 hover:shadow-lg transition-all duration-300">
-          View Profile
-        </button>
+        {/* View Profile Button */}
+        <div className="mt-4 flex justify-center">
+          <button className="bg-black text-white px-4 py-2 text-sm font-semibold rounded-lg shadow-md hover:bg-gray-600 transition">
+            View Profile
+          </button>
+        </div>
       </div>
     </div>
   );
