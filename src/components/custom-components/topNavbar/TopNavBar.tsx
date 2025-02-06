@@ -34,7 +34,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
                   setIsDropdownOpen(false);
                 }}
                 className={`block w-full text-left px-4 py-2 rounded-lg transition-all text-sm ${
-                  selectedCategory.toLowerCase() === category.toLowerCase() ? "bg-blue-500 text-white" : "hover:bg-gray-700"
+                  selectedCategory.toLowerCase() === category.toLowerCase() ? "bg-gray-500 text-white" : "hover:bg-gray-700"
                 }`}
               >
                 {category}
@@ -50,7 +50,7 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
               key={category}
               onClick={() => setSelectedCategory(category)}
               className={`px-4 py-2 md:px-3 md:py-1 sm:px-2 sm:py-1 text-base sm:text-sm rounded-lg transition-all ${
-                selectedCategory.toLowerCase() === category.toLowerCase() ? "bg-blue-500 text-white" : "bg-gray-700 hover:bg-gray-600"
+                selectedCategory.toLowerCase() === category.toLowerCase() ? "bg-gray-500 text-white" : "bg-gray-700 hover:bg-gray-600"
               }`}
             >
               {category}
@@ -59,11 +59,11 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
         </div>
 
         {/* Right Section - Find Work Button & Notification Icon */}
-        <div className="flex items-center md:space-x-2 space-x-4">
-          <button className="px-4 py-2 md:px-3 md:py-1 sm:px-2 sm:py-1 text-base sm:text-sm bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all">
+        <div className="flex items-center md:space-x-6 space-x-4">
+          <button className="px-4 py-2 md:px-3 md:py-1 sm:px-2 sm:py-1 text-base sm:text-sm bg-white text-black rounded-lg hover:bg-gray-600 transition-all">
             Find Work
           </button>
-          <IoNotificationsOutline className="text-2xl md:text-xl sm:text-lg cursor-pointer hover:text-blue-400" />
+          <IoNotificationsOutline className="text-2xl md:text-xl sm:text-lg cursor-pointer hover:text-gray-400" />
         </div>
       </div>
     </div>

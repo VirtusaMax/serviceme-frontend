@@ -43,7 +43,7 @@ const JobCard: React.FC<JobCardProps> = ({ name, location, rating = 4.5, image, 
         {/* View Profile Button */}
         <button
           onClick={onViewProfile}
-          className="mt-3 w-full bg-blue-500 hover:bg-blue-600 text-white text-xs font-semibold py-1.5 rounded-md transition-all"
+          className="mt-3 w-full bg-gray-700 hover:bg-gray-800 text-white text-xs font-semibold py-1.5 rounded-md transition-all"
         >
           View Profile
         </button>
