@@ -7,13 +7,13 @@ const ContactPage: React.FC = () => {
   return (
     <div className="max-w-[1600px] mx-auto bg-gray-50 text-gray-900 min-h-screen">
       {/* Navbar */}
-      <header className="bg-white shadow-md sticky top-0 z-50 border-b border-gray-300">
+      <header className="bg-white shadow-md sticky top-15 z-50 border-b border-gray-300 ">
         <Navbar />
       </header>
 
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center py-40 flex justify-center items-center"
+        className="relative bg-cover bg-center py-40 flex justify-center items-center "
         style={{ backgroundImage: `url(${bg1})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
