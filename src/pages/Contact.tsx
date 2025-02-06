@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="bg-gray-50 text-gray-900 min-h-screen">
+    <div className="max-w-[1600px] mx-auto bg-gray-50 text-gray-900 min-h-screen">
       {/* Navbar */}
       <header className="bg-white shadow-md sticky top-0 z-50 border-b border-gray-300">
         <Navbar />
@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
+                className="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               />
             </div>
             <div>
@@ -42,7 +42,7 @@ const ContactPage: React.FC = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
+                className="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               />
             </div>
             <div>
@@ -50,7 +50,7 @@ const ContactPage: React.FC = () => {
               <textarea
                 placeholder="Write your message here"
                 rows={5}
-                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
+                className="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               ></textarea>
             </div>
             <button

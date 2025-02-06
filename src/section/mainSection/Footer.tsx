@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer
-      className="relative w-full text-gray-300 overflow-hidden"
+      className="relative max-w-[1600px] mx-auto w-full text-gray-300 overflow-hidden"
       style={{
         backgroundImage: "linear-gradient(135deg, #0a0e1a 20%, #1a1a2e 65%, #f7b731 200%)",
         backgroundSize: "cover",
