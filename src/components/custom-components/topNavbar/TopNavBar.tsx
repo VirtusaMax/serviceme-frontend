@@ -1,129 +1,69 @@
 import React, { useState } from "react";
-import { GiBroom, GiCookingPot, GiPaintBrush, GiMechanicGarage, GiWrench, GiSteeringWheel, GiLipstick } from "react-icons/gi"; // Import GiLipstick
-import { FaBell } from "react-icons/fa";
-import { MdSearch, MdChildCare } from "react-icons/md"; // Import MdChildCare
+import { IoNotificationsOutline, IoMenu } from "react-icons/io5"; // Import Icons
 
-type Category = {
-  icon: JSX.Element;
-  label: string;
-};
-
-type TopNavbarProps = {
+interface TopNavbarProps {
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
-};
+}
+
+const categories = [
+  "ALL", "Cleaner", "Chef", "Painter", "Mechanic", "Plumber", "Beautician", "ChildCare", "Driver"
+];
 
 const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCategory }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const categories: Category[] = [
-    { icon: <GiBroom />, label: "Cleaner" },
-    { icon: <GiCookingPot />, label: "Chef" },
-    { icon: <GiPaintBrush />, label: "Painter" },
-    { icon: <GiMechanicGarage />, label: "Mechanic" },
-    { icon: <GiWrench />, label: "Plumber" },
-    { icon: <GiLipstick />, label: "Beautician" },
-    { icon: <MdChildCare />, label: "ChildCare" },
-    { icon: <GiSteeringWheel />, label: "Driver" },
-  ];
-
   return (
-    <div className="flex items-center justify-between bg-gradient-to-r from-gray-200 to-gray-300 p-4 text-gray-700 shadow-lg rounded-xl backdrop-blur-md w-full">
-      {/* Categories Section */}
-      <div className="hidden sm:flex sm:space-x-3">
-        {/* 'ALL' Category */}
-        <div className="relative group">
-          <div
-            className={`p-2 w-12 h-12 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-300 ${
-              selectedCategory === "ALL"
-                ? "bg-gray-400 text-white shadow-md scale-105"
-                : "bg-gray-300 hover:bg-gray-400 hover:scale-105"
-            }`}
-            onClick={() => setSelectedCategory("ALL")}
-          >
-            <span className="font-bold text-sm">ALL</span>
-          </div>
-          {/* Tooltip */}
-          <span className="absolute -top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
-            All Categories
-          </span>
+    <div className="bg-gray-900 text-white shadow-md max-w-[1600px] mx-auto w-full border-b border-gray-700 pt-4">
+      <div className="max-w-[1600px] mx-auto w-full px-7 md:px-10 py-3 flex items-center justify-between">
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+            <IoMenu className="text-2xl" />
+          </button>
         </div>
 
-        {/* Other Categories */}
-        {categories.map((item, index) => (
-          <div key={index} className="relative group">
-            <div
-              className={`p-2 w-12 h-12 flex items-center justify-center rounded-xl cursor-pointer transition-all duration-300 ${
-                selectedCategory === item.label
-                  ? "bg-gray-400 text-white shadow-md scale-105"
-                  : "bg-gray-300 hover:bg-gray-400 hover:scale-105"
-              }`}
-              onClick={() => setSelectedCategory(item.label)}
-            >
-              <span className="text-xl">{item.icon}</span>
-            </div>
-            {/* Tooltip */}
-            <span className="absolute -top-15 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
-              {item.label}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      {/* Dropdown for Smaller Screens */}
-      <div className="sm:hidden relative">
-        <button
-          onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="bg-gray-300 text-gray-700 p-3 rounded-xl hover:bg-gray-400 transition-all duration-300"
-        >
-          <span className="font-bold">Categories</span>
-        </button>
+        {/* Dropdown Menu for Small Screens */}
         {isDropdownOpen && (
-          <div className="absolute bg-gray-300 text-gray-700 shadow-lg mt-2 rounded-xl w-40 p-2 backdrop-blur-md">
-            {/* Dropdown Item for 'ALL' */}
-            <div
-              className="p-2 cursor-pointer hover:bg-gray-700 hover:underline rounded-md transition-all duration-200"
-              onClick={() => {
-                setSelectedCategory("ALL");
-                setIsDropdownOpen(false);
-              }}
-            >
-              All
-            </div>
-            {/* Dropdown Items for Other Categories */}
-            {categories.map((item, index) => (
-              <div
-                key={index}
-                className="p-2 cursor-pointer hover:bg-gray-400 hover:underline rounded-md transition-all duration-200"
+          <div className="absolute top-14 left-0 w-full bg-gray-800 p-3 rounded-md shadow-lg md:hidden">
+            {categories.map((category) => (
+              <button
+                key={category}
                 onClick={() => {
-                  setSelectedCategory(item.label);
+                  setSelectedCategory(category);
                   setIsDropdownOpen(false);
                 }}
+                className={`block w-full text-left px-4 py-2 rounded-lg transition-all text-sm ${
+                  selectedCategory.toLowerCase() === category.toLowerCase() ? "bg-gray-500 text-white" : "hover:bg-gray-700"
+                }`}
               >
-                {item.label}
-              </div>
+                {category}
+              </button>
             ))}
           </div>
         )}
-      </div>
 
-      {/* Action Buttons */}
-      <div className="flex items-center space-x-4">
-        {/* Find Work Button */}
-        <button className="flex items-center gap-2 bg-amber-300 hover:bg-amber-500 text-white px-6 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
-          <MdSearch className="text-xl" />
-          <span className="text-sm font-semibold">Find Work</span>
-        </button>
+        {/* Categories List for Large Screens */}
+        <div className="hidden md:flex flex-wrap space-x-3 overflow-x-auto">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 md:px-3 md:py-1 sm:px-2 sm:py-1 text-base sm:text-sm rounded-lg transition-all ${
+                selectedCategory.toLowerCase() === category.toLowerCase() ? "bg-gray-500 text-white" : "bg-gray-700 hover:bg-gray-600"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
-        {/* Notifications Button */}
-        <div className="relative group">
-          <button className="p-3 bg-gray-300 hover:bg-gray-400 rounded-full shadow-md transition-all duration-300 transform hover:scale-110">
-            <FaBell className="text-2xl text-gray-700" />
+        {/* Right Section - Find Work Button & Notification Icon */}
+        <div className="flex items-center md:space-x-6 space-x-4">
+          <button className="px-4 py-2 md:px-3 md:py-1 sm:px-2 sm:py-1 text-base sm:text-sm bg-white text-black rounded-lg hover:bg-gray-600 transition-all">
+            Find Work
           </button>
-          {/* Tooltip */}
-          <span className="absolute -top-15 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-300 text-gray-700 text-xs px-2 py-1 rounded-md transition-opacity duration-200">
-            Notifications
-          </span>
+          <IoNotificationsOutline className="text-2xl md:text-xl sm:text-lg cursor-pointer hover:text-gray-400" />
         </div>
       </div>
     </div>

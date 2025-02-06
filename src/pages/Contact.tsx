@@ -5,21 +5,21 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="bg-gray-50 text-gray-900 min-h-screen">
+    <div className="max-w-[1600px] mx-auto bg-gray-50 text-gray-900 min-h-screen">
       {/* Navbar */}
-      <header className="bg-white shadow-md sticky top-0 z-50 border-b border-gray-300">
+      <header className="bg-white shadow-md sticky top-15 z-50 border-b border-gray-300 ">
         <Navbar />
       </header>
 
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center py-40 flex justify-center items-center"
+        className="relative bg-cover bg-center py-40 flex justify-center items-center "
         style={{ backgroundImage: `url(${bg1})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="text-center relative z-10">
           <h1 className="text-5xl font-bold text-white drop-shadow-lg">Contact Us</h1>
-          <p className="text-lg text-gray-200 mt-4">We'd love to hear from you. Reach out anytime!</p>
+           
         </div>
       </section>
 
@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
+                className="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               />
             </div>
             <div>
@@ -42,7 +42,7 @@ const ContactPage: React.FC = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
+                className="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               />
             </div>
             <div>
@@ -50,7 +50,7 @@ const ContactPage: React.FC = () => {
               <textarea
                 placeholder="Write your message here"
                 rows={5}
-                className="w-full px-4 py-3 rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
+                className="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-gray-600 outline-none transition"
               ></textarea>
             </div>
             <button
