@@ -35,11 +35,11 @@ const ServiceProvider: React.FC = () => {
 
   return (
     <>
-      <div className="bg-black text-white shadow-md">
+      <div className="bg-black text-white ">
         <Navbar />
       </div>
 
-      <div className="fixed top-14 w-full z-40 bg-black text-white shadow-md pt-5">
+      <div className="fixed top-14 w-full z-40 pt-5">
         <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </div>
 
