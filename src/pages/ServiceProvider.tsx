@@ -27,6 +27,12 @@ const ServiceProvider: React.FC = () => {
       ? jobs
       : jobs.filter((job) => job.category === selectedCategory);
 
+  // Handle View Profile button click
+  const handleViewProfile = (job: Job) => {
+    console.log(`Viewing profile of ${job.name}`);
+    // You can navigate to a profile page or open a modal here
+  };
+
   return (
     <>
       <div className="bg-black text-white shadow-md">
@@ -34,10 +40,7 @@ const ServiceProvider: React.FC = () => {
       </div>
 
       <div className="fixed top-14 w-full z-40 bg-black text-white shadow-md pt-5">
-        <TopNavbar
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-        />
+        <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </div>
 
       <div className="w-full pt-36 pb-6 flex flex-col items-center">
@@ -61,9 +64,8 @@ const ServiceProvider: React.FC = () => {
                     name={job.name}
                     location={job.location}
                     phone={job.phone}
-                    date={job.date}
-                    profileImage={job.profileImage}
-                    category={job.category}
+                    image={job.profileImage}
+                    onViewProfile={() => handleViewProfile(job)}
                   />
                 </motion.div>
               ))}
