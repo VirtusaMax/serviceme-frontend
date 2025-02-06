@@ -5,7 +5,7 @@ const RegisterDialogContent: React.FC = () => {
     <DialogContent className="bg-gradient-to-br from-custom-blue to-custom-blue text-white p-8 rounded-2xl shadow-2xl max-w-md mx-auto">
       <DialogHeader>
         <DialogTitle className="text-white text-center text-2xl font-bold mb-6 tracking-wide">
-          Post Job
+          Find Work
         </DialogTitle>
       </DialogHeader>
 

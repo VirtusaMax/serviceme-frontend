@@ -66,7 +66,7 @@ const RegisterDialogContent: React.FC = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="px-5 py-2 bg-custom-yellow hover:bg-custom-yellow text-white font-semibold rounded-full shadow-lg transition-all"
+                className="px-5 py-2 bg-custom-yellow hover:bg-custom-yellow text-black font-semibold rounded-full shadow-lg transition-all"
               >
                 Sign Up
               </button>
