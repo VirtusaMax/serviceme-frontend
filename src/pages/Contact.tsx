@@ -19,7 +19,7 @@ const ContactPage: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="text-center relative z-10">
           <h1 className="text-5xl font-bold text-white drop-shadow-lg">Contact Us</h1>
-          <p className="text-lg text-gray-200 mt-4">We'd love to hear from you. Reach out anytime!</p>
+           
         </div>
       </section>
 
