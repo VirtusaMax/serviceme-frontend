@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
 
           
           {/* POST JOB Button */}
-          <li className="md:ml-8 my-7 md:my-0">
+          {/* <li className="md:ml-8 my-7 md:my-0">
             <Dialog.Root>
               <Dialog.Trigger asChild>
                 <button className="bg-yellow-400 text-black py-1 px-3 rounded-xl hover:bg-yellow-500 transition-all">
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                 </Dialog.Content>
               </Dialog.Portal>
             </Dialog.Root>
-          </li>
+          </li> */}
 
           {/* User Circle Icon */}
           <li className="md:ml-8 my-7 md:my-0">
