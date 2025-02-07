@@ -12,15 +12,17 @@ import AboutUsPage from "./pages/AboutUs";
 function App() {
   return (
     <Layout>
-      <div className="flex flex-col justify-center">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUsPage />} />
-          <Route path="/services" element={<ServiceProvider />} />
-          <Route path="/FAQ" element={<FAQPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </div>
+       <div className="flex flex-col justify-center">
+       
+       <Routes>
+ 
+         <Route path="/" element={<Home />} /> 
+         <Route path="/serviceprovider" element={<ServiceProvider />} />
+         <Route path="/FAQ" element={<FAQPage />} />
+         <Route path="/contact" element={<ContactPage />} />
+        
+       </Routes>
+     </div>
     </Layout>
   );
 }
