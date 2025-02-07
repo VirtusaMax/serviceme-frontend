@@ -1,14 +1,57 @@
 import React from "react";
-import backgroundImage from "/images/about_section/about2.jpg";
+import truck from "src/assets/images/about_section/truck.png";
+import workers from "src/assets/images/about_section/workers.png";
+import help from "src/assets/images/about_section/help.png";
+import okHand from "src/assets/images/about_section/ok_hand.png";
+import backgroundImage from "@/assets/images/about_section/about2.jpg";
 
-interface AboutUsItem {
-  icon: string;
-  title: string;
-  description: string;
-}
+// Static data
+const servicesData = [
+  {
+    title: "FAST & RELIABLE HOME SERVICES",
+    description: "Looking for a fast fix, a spotless home, or a well-kept lawn? We connect you with trusted local experts ready to help!",
+    icon: "truck",
+  },
+  {
+    title: "LOCAL EXPERTS AT YOUR SERVICE",
+    description: "Find skilled freelancers in your neighborhood for any home task repairs, cleaning, yard work, and more all at your convenience.",
+    icon: "workers",
+  },
+  {
+    title: "SUPPORTING YOUR COMMUNITY",
+    description: "We believe in empowering local professionals while simplifying your life. Every service supports your community and is completed with the utmost care.",
+    icon: "help",
+  },
+  {
+    title: "SIMPLIFY YOUR LIFE",
+    description: "Book easily, communicate directly, and enjoy hassle-free service—all in one platform!",
+    icon: "okHand",
+  }
+];
+
+// Map through the data to assign the correct icon image based on the icon name
+const services = servicesData.map((service) => {
+  switch (service.icon) {
+    case "truck":
+      service.icon = truck;
+      break;
+    case "workers":
+      service.icon = workers;
+      break;
+    case "help":
+      service.icon = help;
+      break;
+    case "okHand":
+      service.icon = okHand;
+      break;
+    default:
+      service.icon = ""; // Default case
+  }
+  return service;
+});
 
 interface AboutUsProps {
-  data: AboutUsItem[];
+  data: typeof services; // Type of the services array
 }
 
 const AboutUs: React.FC<AboutUsProps> = ({ data }) => {

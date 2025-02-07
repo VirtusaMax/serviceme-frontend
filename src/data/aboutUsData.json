@@ -2,21 +2,21 @@
   {
     "title": "FAST & RELIABLE HOME SERVICES",
     "description": "Looking for a fast fix, a spotless home, or a well-kept lawn? We connect you with trusted local experts ready to help!",
-    "icon": "/images/about_section/truck.png"
+    "icon": "src/assets/images/about_section/truck.png"
   },
   {
     "title": "LOCAL EXPERTS AT YOUR SERVICE",
     "description": "Find skilled freelancers in your neighborhood for any home task repairs, cleaning, yard work, and more all at your convenience.",
-    "icon": "/images/about_section/workers.png"
+    "icon": "src/assets/images/about_section/workers.png"
   },
   {
     "title": "SUPPORTING YOUR COMMUNITY",
     "description": "We believe in empowering local professionals while simplifying your life. Every service supports your community and is completed with the utmost care.",
-    "icon": "/images/about_section/help.png"
+    "icon": "src/assets/images/about_section/help.png"
   },
   {
     "title": "SIMPLIFY YOUR LIFE",
     "description": "Book easily, communicate directly, and enjoy hassle-free service—all in one platform!",
-    "icon": "/images/about_section/ok_hand.png"
+    "icon": "src/assets/images/about_section/ok_hand.png"
   }
 ]
