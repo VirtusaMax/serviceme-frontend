@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "@/assets/images/about_section/about2.jpg";
+import backgroundImage from "/images/about_section/about2.jpg";
 
 interface AboutUsItem {
   icon: string;
