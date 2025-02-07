@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
             >
               <Dialog>
                 <DialogTrigger asChild>
-                  <button className="bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-xl mt-2">
+                  <button className="bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-xl mt-2 hover:bg-custom-white">
                     Explore Opportunities
                   </button>
                 </DialogTrigger>
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
 
               <Dialog>
                 <DialogTrigger asChild>
-                  <button className="bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-xl mt-2">
+                  <button className="bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-xl mt-2 hover:bg-custom-white">
                     Find Professionals
                   </button>
                 </DialogTrigger>
