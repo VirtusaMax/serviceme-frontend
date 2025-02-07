@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
           <li className="md:ml-8 my-7 md:my-0">
             <Dialog>
               <DialogTrigger asChild>
-                <button className="bg-yellow-400 text-black py-2 px-4 rounded-xl hover:bg-yellow-500 transition-all">
+                <button className="bg-yellow-400 text-black py-2 px-4 rounded-xl hover:bg-custom-white transition-all">
                   POST JOB
                 </button>
               </DialogTrigger>
