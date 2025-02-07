@@ -2132,7 +2132,7 @@ react-toastify@^11.0.3:
     react-router-dom "^7.1.3"
     react-slick "^0.30.3"
     react-toastify "^11.0.3"
-    react-vite-template "file:C:/Users/MSI/AppData/Local/Yarn/Cache/v6/npm-react-vite-template-0.0.0-ab399795-7ac5-4e59-9198-56c4e13f7a84-1738936889077/node_modules/react-vite-template"
+    react-vite-template "file:C:/Users/MSI/AppData/Local/Yarn/Cache/v6/npm-react-vite-template-0.0.0-cf0cbb38-e5c1-4868-804c-23982151f4b8-1738939580506/node_modules/react-vite-template"
     slick-carousel "^1.8.1"
     sonner "^1.5.0"
     swiper "^11.2.1"
