@@ -10,7 +10,7 @@ interface AboutUsItem {
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="bg-[#F6F1F1] text-left p-8">
+    <section className="bg-[#F6F1F1] text-left p-10">
       <h2 className="font-bold mt-2 mb-2 text-4xl text-yellow-400">ABOUT US</h2>
       <div className="bg-yellow-400 mt-5 rounded-lg shadow-lg p-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mx-auto">
         {aboutUsData.map((item: AboutUsItem, index: number) => (

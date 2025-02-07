@@ -2,6 +2,7 @@ import React from "react";
 import heroImg from "../../assets/images/hero_section/heropic.png";
 import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
 import PostJobDialogContent from "@/components/dialog/PostJobDialogContent";
+import FindJobDialogContent from "@/components/dialog/FindJobDialogContent";
 
 const HeroSection: React.FC = () => {
   return (
@@ -22,9 +23,15 @@ const HeroSection: React.FC = () => {
               className="flex flex-col xl:flex-row w-8/12 md:w-10/12 xl:w-full space-y-4 xl:space-y-2
               xl:space-x-4"
             >
-              <button className="bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-xl mt-2">
-                Explore Opportunities
-              </button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-xl mt-2">
+                    Explore Opportunities
+                  </button>
+                </DialogTrigger>
+                <FindJobDialogContent />
+              </Dialog>
+
               <Dialog>
                 <DialogTrigger asChild>
                   <button className="bg-[#FCC215] text-[#0E0524] font-bold text-s h-[39px] px-6 py-0 rounded-xl mt-2">
@@ -33,6 +40,7 @@ const HeroSection: React.FC = () => {
                 </DialogTrigger>
                 <PostJobDialogContent />
               </Dialog>
+              
             </div>
           </div>
         </div>
