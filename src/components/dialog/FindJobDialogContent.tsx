@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const RegisterDialogContent: React.FC = () => {
+  const navigate = useNavigate(); // Initialize navigate function
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault(); // Prevent default form submission
+    navigate("/services"); // Navigate to PostJob page
+  };
+
   return (
     <DialogContent className="bg-gradient-to-br from-custom-blue to-custom-blue text-white p-8 rounded-2xl shadow-2xl max-w-md mx-auto">
       <DialogHeader>
@@ -9,7 +17,7 @@ const RegisterDialogContent: React.FC = () => {
         </DialogTitle>
       </DialogHeader>
 
-      <form className="space-y-5">
+      <form className="space-y-5" onSubmit={handleSubmit}>
         {/* Category Dropdown */}
         <div>
           <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -62,15 +70,15 @@ const RegisterDialogContent: React.FC = () => {
         <div className="flex justify-between items-center space-x-4">
           <button
             type="button"
-            className="w-1/2 px-4 py-2 bg-white text-custom-blue font-semibold rounded-xl shadow-md transition duration-300 ease-in-out  hover:text-black hover:shadow-lg"
+            className="w-1/2 px-4 py-2 bg-white text-custom-blue font-semibold rounded-xl shadow-md transition duration-300 ease-in-out hover:text-black hover:shadow-lg"
           >
             Cancel
           </button>
           <button
             type="submit"
-            className="w-1/2 px-4 py-2 bg-custom-yellow text-black font-semibold rounded-xl shadow-md transition duration-300 ease-in-out  hover:text-black hover:shadow-lg"
+            className="w-1/2 px-4 py-2 bg-custom-yellow text-black font-semibold rounded-xl shadow-md transition duration-300 ease-in-out hover:text-black hover:shadow-lg"
           >
-            Post
+            Find Job
           </button>
         </div>
       </form>
