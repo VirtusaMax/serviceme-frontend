@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, MapPin, Phone } from "lucide-react";
+import { Star, MapPin, Phone, User } from "lucide-react";
 
 interface JobCardProps {
   name: string;
@@ -12,7 +12,7 @@ interface JobCardProps {
 
 const JobCard: React.FC<JobCardProps> = ({ name, location, rating = 4.5, image, phone, onViewProfile }) => {
   return (
-    <div className="w-48 sm:w-56 md:w-64 bg-white border border-blue-300 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-200">
+    <div className="w-48 sm:w-56 md:w-64 bg-white border border-gray-300 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 ease-in-out">
       {/* Image Section */}
       <div className="w-full h-32 sm:h-40 md:h-48 overflow-hidden">
         <img src={image} alt={name} className="w-full h-full object-cover rounded-t-xl" />
@@ -41,12 +41,14 @@ const JobCard: React.FC<JobCardProps> = ({ name, location, rating = 4.5, image, 
         </div>
 
         {/* View Profile Button */}
-        <button
-          onClick={onViewProfile}
-          className="mt-3 w-full bg-gray-700 hover:bg-gray-800 text-white text-xs font-semibold py-1.5 rounded-md transition-all"
-        >
-          View Profile
-        </button>
+        <div className="flex justify-end mt-3">
+          <button
+            onClick={onViewProfile}
+            className="w-32 flex items-center justify-center gap-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white text-xs font-semibold px-4 py-2 rounded-full transition-all duration-300 ease-in-out shadow-md hover:shadow-xl transform hover:scale-105"
+          >
+            <User size={16} /> View Profile
+          </button>
+        </div>
       </div>
     </div>
   );
