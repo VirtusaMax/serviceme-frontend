@@ -4,7 +4,7 @@
     "location": "Colombo",
     "phone": "070 423####",
     "date": "Feb 2023",
-    "profileImage": "src/assets/images/service_provider/workprofile1.jpeg",
+    "profileImage": "service_provider/workprofile1.jpeg",
     "category": "Cleaner"
   },
   {
@@ -12,7 +12,7 @@
     "location": "Kandy",
     "phone": "070 123####",
     "date": "Oct 2019",
-    "profileImage": "src/assets/images/service_provider/workprofile2.jpg",
+    "profileImage": "service_provider/workprofile2.jpg",
     "category": "Chef"
   },
   {
@@ -20,7 +20,7 @@
     "location": "Matara",
     "phone": "070 432####",
     "date": "Jan 2020",
-    "profileImage": "src/assets/images/service_provider/workprofile3.png",
+    "profileImage": "service_provider/workprofile3.png",
     "category": "Painter"
   },
   {
@@ -28,7 +28,7 @@
     "location": "Batticaloa",
     "phone": "070 655####",
     "date": "Feb 2021",
-    "profileImage": "src/assets/images/service_provider/workprofile4.png",
+    "profileImage": "service_provider/workprofile4.png",
     "category": "Mechanic"
   },
   {
@@ -36,7 +36,7 @@
     "location": "Colombo",
     "phone": "070 222####",
     "date": "Jan 2023",
-    "profileImage": "src/assets/images/service_provider/workprofile5.png",
+    "profileImage": "service_provider/workprofile5.png",
     "category": "Plumber"
   },
   {
@@ -44,7 +44,7 @@
     "location": "Kandy",
     "phone": "070 765####",
     "date": "Mar 2021",
-    "profileImage": "src/assets/images/service_provider/workprofile6.png",
+    "profileImage": "service_provider/workprofile6.png",
     "category": "Beautician"
   },
   {
@@ -52,7 +52,7 @@
     "location": "Colombo",
     "phone": "070 234####",
     "date": "Jun 2021",
-    "profileImage": "src/assets/images/service_provider/workprofile7.png",
+    "profileImage": "service_provider/workprofile7.png",
     "category": "ChildCare"
   },
   {
@@ -60,7 +60,7 @@
     "location": "Batticaloa",
     "phone": "070 876####",
     "date": "Sep 2021",
-    "profileImage": "src/assets/images/service_provider/workprofile8.jpg",
+    "profileImage": "service_provider/workprofile8.jpg",
     "category": "Driver"
   },
   {
@@ -68,7 +68,7 @@
     "location": "Galle",
     "phone": "070 895####",
     "date": "Nov 2021",
-    "profileImage": "src/assets/images/service_provider/workprofile9.png",
+    "profileImage": "service_provider/workprofile9.png",
     "category": "Cleaner"
   },
   {
@@ -76,7 +76,7 @@
     "location": "Kurunegala",
     "phone": "070 987####",
     "date": "Dec 2022",
-    "profileImage": "src/assets/images/service_provider/workprofile10.jpg",
+    "profileImage": "service_provider/workprofile10.jpg",
     "category": "Chef"
   },
   {
@@ -84,7 +84,7 @@
     "location": "Jaffna",
     "phone": "070 564####",
     "date": "Apr 2022",
-    "profileImage": "src/assets/images/service_provider/workprofile11.jpg",
+    "profileImage": "service_provider/workprofile11.jpg",
     "category": "Painter"
   },
   {
@@ -92,7 +92,7 @@
     "location": "Negombo",
     "phone": "070 543####",
     "date": "Nov 2020",
-    "profileImage": "src/assets/images/service_provider/workprofile12.png",
+    "profileImage": "service_provider/workprofile12.png",
     "category": "Mechanic"
   },
   {
@@ -100,7 +100,7 @@
     "location": "Galle",
     "phone": "070 888####",
     "date": "May 2022",
-    "profileImage": "src/assets/images/service_provider/workprofile13.png",
+    "profileImage": "service_provider/workprofile13.png",
     "category": "Plumber"
   },
   {
@@ -108,7 +108,7 @@
     "location": "Kurunegala",
     "phone": "070 432####",
     "date": "Oct 2020",
-    "profileImage": "src/assets/images/service_provider/workprofile14.png",
+    "profileImage": "service_provider/workprofile14.png",
     "category": "Beautician"
   },
   {
@@ -116,7 +116,7 @@
     "location": "Matara",
     "phone": "070 654####",
     "date": "Dec 2020",
-    "profileImage": "src/assets/images/service_provider/workprofile15.png",
+    "profileImage": "service_provider/workprofile15.png",
     "category": "ChildCare"
   },
   {
@@ -124,7 +124,7 @@
     "location": "Galle",
     "phone": "070 234####",
     "date": "Apr 2020",
-    "profileImage": "src/assets/images/service_provider/workprofile16.png",
+    "profileImage": "service_provider/workprofile16.png",
     "category": "Driver"
   }
 ]
