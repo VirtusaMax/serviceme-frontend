@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import JobCard from "../components/custom-components/service_provider/JobCard";
 import TopNavbar from "../components/custom-components/topNavbar/TopNavBar";
-import Navbar from "@/section/mainSection/Navbar";
 import jobsData from "../data/jobs.json";
 
 type Job = {
@@ -35,10 +34,7 @@ const ServiceProvider: React.FC = () => {
 
   return (
     <>
-      <div className="bg-black text-white ">
-        <Navbar />
-      </div>
-
+      
       <div className="fixed top-14 w-full z-40 pt-5">
         <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </div>
