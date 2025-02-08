@@ -65,7 +65,7 @@ const PostJob = () => {
         {/* Right Image Section */}
         <div className="hidden lg:block w-1/3">
           <img
-            src="src/assets/images/post_job/cle_1.jpg"
+            src="post_job/cle_1.jpg"
             alt="House Cleaning"
             className="w-full h-auto rounded-lg object-cover"
           />
