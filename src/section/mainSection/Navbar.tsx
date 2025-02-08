@@ -4,7 +4,7 @@ import {
   XMarkIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/solid";
-import logo from "../../assets/images/header_section/logo1.png";
+import logo from "/header_section/logo1.png";
 import { Link } from 'react-router-dom';
 import { Dialog, DialogTrigger, DialogPortal, DialogOverlay, DialogContent } from "@radix-ui/react-dialog";
 import PostJobDialogContent from "@/components/dialog/PostJobDialogContent";

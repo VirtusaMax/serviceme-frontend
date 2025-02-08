@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import googlePlayBadge from "../../assets/images/footer_section/playbutton.png";
+import googlePlayBadge from "/footer_section/playbutton.png";
 
 type IconStyle = {
   position: "absolute";
