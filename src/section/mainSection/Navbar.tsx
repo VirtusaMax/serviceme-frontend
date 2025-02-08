@@ -1,4 +1,3 @@
-// src/components/custom-components/Navbar.tsx
 import React, { useState } from "react";
 import {
   Bars3BottomLeftIcon,
@@ -7,6 +6,8 @@ import {
 } from "@heroicons/react/24/solid";
 import logo from "../../assets/images/header_section/logo1.png";
 import { Link } from 'react-router-dom';
+import { Dialog, DialogTrigger, DialogPortal, DialogOverlay, DialogContent } from "@radix-ui/react-dialog";
+import PostJobDialogContent from "@/components/dialog/PostJobDialogContent";
 
 const Navbar: React.FC = () => {
   const Links = [
@@ -36,9 +37,8 @@ const Navbar: React.FC = () => {
 
         {/* Navbar Links */}
         <ul
-          className={`md:flex md:items-center md:ml-auto md:pb-0 pb-14 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-12 transition-all bg-[#0E0524] text-white duration-500 ease-in ${
-            isOpen ? "top-14" : "top-[-490px]"
-          }`}
+          className={`md:flex md:items-center md:ml-auto md:pb-0 pb-14 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-12 transition-all bg-[#0E0524] text-white duration-500 ease-in ${isOpen ? "top-14" : "top-[-490px]"
+            } space-x-4`}
         >
           {Links.map((link, index) => (
             <li
@@ -54,19 +54,31 @@ const Navbar: React.FC = () => {
             </li>
           ))}
 
-          {/* POST JOB Button */}
-          <button
-            className="btn bg-yellow-400 text-black py-2 px-3 md:ml-8 rounded md:static mr-4"
-            // onClick={openModal}
-          >
-            POST JOB
-          </button>
-        </ul>
 
-        {/* User Circle Icon */}
-        <div className="absolute right-4 top-6 md:static md:right-auto">
-          <UserCircleIcon className="w-10 h-10 text-white cursor-pointer hover:text-yellow-400 transition-all" />
-        </div>
+          <li className="md:ml-8 my-7 md:my-0">
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="bg-yellow-400 text-black py-2 px-4 rounded-xl hover:bg-custom-white transition-all">
+                  POST JOB
+                </button>
+              </DialogTrigger>
+
+              <DialogPortal>
+                <DialogOverlay className="fixed inset-0 bg-black bg-opacity-50" />
+                <DialogContent className="fixed inset-0 flex items-center justify-center p-6">
+                  <div className="bg-white p-6 rounded-xl shadow-lg">
+                    <PostJobDialogContent />
+                  </div>
+                </DialogContent>
+              </DialogPortal>
+            </Dialog>
+          </li>
+
+          {/* User Circle Icon */}
+          <li className="md:ml-8 my-7 md:my-0">
+            <UserCircleIcon className="w-10 h-10 text-white cursor-pointer hover:text-yellow-400 transition-all" />
+          </li>
+        </ul>
       </div>
     </div>
   );

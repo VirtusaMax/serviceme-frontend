@@ -87,7 +87,7 @@ const Services: React.FC = () => {
         >
           OUR SERVICES
         </p>
-        <Slider {...settings}>
+        <Slider {...(settings as any)}>
           {serviceCardData.map((d, index) => (
             <div key={index}>
               <ServiceCard
