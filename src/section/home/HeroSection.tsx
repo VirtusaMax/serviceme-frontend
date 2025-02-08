@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../../assets/images/hero_section/heropic.png";
+import heroImg from "/hero_section/heropic.png";
 import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
 import PostJobDialogContent from "@/components/dialog/PostJobDialogContent";
 import FindJobDialogContent from "@/components/dialog/FindJobDialogContent";

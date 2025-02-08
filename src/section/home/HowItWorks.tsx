@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/images/work_section/worksbg.png";
+import backgroundImage from "/work_section/worksbg.png";
 import ReactPlayer from "react-player";
 
 const HowItWorks: React.FC = () => {

@@ -55,7 +55,14 @@ const Services: React.FC = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <div className={`grid grid-cols-${visibleCards} gap-4 w-full overflow-hidden`}>
+          {/* Fix: Use conditional class names instead of template literals */}
+          <div
+            className={`grid gap-4 w-full overflow-hidden ${
+              visibleCards === 4 ? "grid-cols-4" :
+              visibleCards === 3 ? "grid-cols-3" :
+              "grid-cols-2"
+            }`}
+          >
             {serviceCardData.slice(currentIndex, currentIndex + visibleCards).map((d, index) => (
               <div key={index}>
                 <ServiceCard

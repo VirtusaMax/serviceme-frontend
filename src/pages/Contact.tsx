@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "@/section/mainSection/Navbar";
-import bg1 from "../assets/images/service_provider/bg1.png";
+import bg1 from "/service_provider/bg1.png";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactPage: React.FC = () => {
