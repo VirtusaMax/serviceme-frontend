@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
+
 const RegisterDialogContent: React.FC = () => {
   const navigate = useNavigate(); // Initialize navigate function
 
@@ -9,7 +10,7 @@ const RegisterDialogContent: React.FC = () => {
     console.log("Job posted successfully!");
     
     // Redirect to ServiceProvider page after submitting the form
-    navigate("/services");
+    navigate("/postjob");
   };
 
   return (
@@ -64,6 +65,7 @@ const RegisterDialogContent: React.FC = () => {
             className="w-1/2 px-4 py-2 bg-custom-yellow text-black font-semibold rounded-xl shadow-md transition duration-300 ease-in-out hover:text-black hover:shadow-lg"
           >
             Post
+            
           </button>
         </div>
       </form>
