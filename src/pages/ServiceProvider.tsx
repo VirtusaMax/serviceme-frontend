@@ -55,7 +55,7 @@ const ServiceProvider: React.FC = () => {
               {filteredJobs.map((job, index) => (
                 <motion.div
                   key={index}
-                  className="mb-4"
+                  className="mb-4 pt-0"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.3, ease: "easeOut", delay: index * 0.1 }}

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import ServiceProvider from "./pages/ServiceProvider";
 import FAQPage from "./pages/FaqPage";
 import ContactPage from "./pages/Contact";
+import PostJob from "./pages/post_job";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
          <Route path="/services" element={<ServiceProvider />} />
          <Route path="/FAQ" element={<FAQPage />} />
          <Route path="/contact" element={<ContactPage />} />
+         
         
        </Routes>
      </div>
