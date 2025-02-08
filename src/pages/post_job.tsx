@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import jobData from "../data/postJobCardData.json";
 import TopNavbar from "@/components/custom-components/topNavbar/TopNavBar";
 
