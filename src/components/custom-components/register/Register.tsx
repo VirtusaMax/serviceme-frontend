@@ -38,7 +38,7 @@ const Register: React.FC<RegisterProps> = ({ profiles }) => {
           <div className="mt-8 flex justify-center lg:justify-start">
             <Dialog>
               <DialogTrigger asChild>
-                <button className="inline-block px-2 py-1 sm:px-7 sm:py-4 bg-yellow-500 text-custom-blue font-semibold text-base sm:text-lg rounded-full shadow-md hover:shadow-lg hover:bg-custom-white transition-transform duration-300 transform hover:scale-105">
+                <button className="inline-block px-2 py-1 sm:px-7 sm:py-4 bg-custom-yellow text-custom-blue font-semibold text-base sm:text-lg rounded-full shadow-md hover:shadow-lg hover:bg-custom-white transition-transform duration-300 transform hover:scale-105">
                   REGISTER NOW
                 </button>
               </DialogTrigger>
