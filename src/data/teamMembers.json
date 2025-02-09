@@ -1,0 +1,31 @@
+[
+    {
+      "name": "Ania Smith",
+      "position": "Developer",
+      "image": "/about_section/p1.webp",
+      "email": "ania.smith@example.com",
+      "phone": "+1 (123) 456-7890"
+    },
+    {
+      "name": "Ben Edelhart",
+      "position": "Developer",
+      "image": "/about_section/p2.webp",
+      "email": "ben.edelhart@example.com",
+      "phone": "+1 (987) 654-3210"
+    },
+    {
+      "name": "Amy Ming Zhang",
+      "position": "Developer",
+      "image": "/about_section/p3.webp",
+      "email": "amy.zhang@example.com",
+      "phone": "+1 (555) 123-4567"
+    },
+    {
+      "name": "Christopher Ager",
+      "position": "Developer",
+      "image": "/about_section/p4.webp",
+      "email": "chris.ager@example.com",
+      "phone": "+1 (333) 999-8888"
+    }
+  ]
+  
