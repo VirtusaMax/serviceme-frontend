@@ -13,24 +13,38 @@ const AboutUsPage = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   return (
-    <div className="my-12 max-w-[1600px] mx-auto flex flex-col w-full items-center px-4 py-3 bg-gradient-to-b from-gray-50 to-gray-200">
-      {/* About Us Section */}
-      <div className="w-full max-w-[1600px] mx-auto bg-white shadow-lg py-12 flex flex-col items-center px-6 md:px-12 rounded-2xl">
-        <img
-          src="/about_section/about.png"
-          alt="About Us"
-          className="w-full max-w-5xl object-cover rounded-xl shadow-md"
-        />
-        <h2 className="text-2xl font-bold uppercase mt-2 text-custom-yellow tracking-wide">About Us</h2>
-        <p className="text-center text-3xl font-bold max-w-3xl mt-6 text-custom-blue">
-          Transforming lives, one task at a time
-        </p>
-        <p className="text-center text-gray-600 max-w-3xl mt-4">
-        At ServiceMe, we believe in making everyday tasks easier by connecting people who need help with skilled professionals who can get the job done. Whether it’s fixing furniture, repairing appliances, cleaning, or any other home service, we bring together reliable experts and customers who need their skills.
-
-Our mission is simple: to transform lives, one task at a time. We empower local service providers by giving them a platform to grow while ensuring that customers get quick, high-quality services they can trust.  </p>
-
+    <div className="my-12 max-w-[1600px] mx-auto flex flex-col w-full items-center px-4 py-3 bg-gradient-to-b from-white to-white">
+      {/* Cover Section */}
+      <div 
+        className="relative w-full max-w-[1600px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] bg-center bg-no-repeat bg-cover"
+        style={{ backgroundImage: "url('/about_section/about.png')" }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent flex flex-col justify-center items-center text-center px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-custom-blue uppercase">About Us</h1>
+          <p className="text-base sm:text-lg md:text-xl text-white mt-4 max-w-3xl">Fix, Build, Repair - All on ServiceMe!</p>
+        </div>
       </div>
+
+      {/* About Us Sections */}
+      {[{
+        title: "Who We Are",
+        highlight: "Making Home Services Effortless",
+        content: "ServiceMe is the leading platform connecting individuals with skilled, pre-screened professionals for household services. From home cleaning to repairs, we ensure every customer gets high-quality assistance quickly and reliably. With an easy-to-use booking system, secure payment options, and trusted professionals, we make home maintenance stress-free."
+      }, {
+        title: "Our Story",
+        highlight: "",
+        content: "ServiceMe was founded with a simple mission: to make home services accessible and convenient. It all started when our founder faced the frustration of finding reliable repair services. Seeing a gap in the market, we built ServiceMe as a seamless solution, ensuring skilled professionals are just a click away. Today, we help thousands of customers connect with trusted experts, making everyday tasks easier than ever."
+      }, {
+        title: "Thank You",
+        highlight: "",
+        content: "Thank you to everyone who has contributed to the growth of ServiceMe. From our early team members who helped shape the platform to the dedicated professionals who deliver top-notch services every day, your efforts have been invaluable. ServiceMe is more than just an app—it’s a community built on trust, convenience, and excellence."
+      }].map(({ title, highlight, content }, index) => (
+        <div key={index} className="w-full max-w-[1200px] bg-white shadow-lg py-12 px-6 sm:px-10 md:px-12 rounded-xl mt-10 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <h2 className="text-2xl font-bold uppercase text-custom-yellow tracking-wide">{title}</h2>
+          {highlight && <p className="text-3xl font-bold max-w-3xl mt-6 text-custom-blue">{highlight}</p>}
+          <p className="text-gray-600 max-w-3xl mt-4">{content}</p>
+        </div>
+      ))}
 
       {/* Leadership Team Section */}
       <div className="w-full max-w-6xl mx-auto mt-16 px-4">
@@ -43,10 +57,10 @@ Our mission is simple: to transform lives, one task at a time. We empower local 
               <div
                 key={index}
                 className="flex flex-col items-center bg-white shadow-md rounded-xl p-6 transition-all transform hover:scale-105 hover:shadow-2xl cursor-pointer"
-                onClick={() => setSelectedMember(member)} // Open dialog
+                onClick={() => setSelectedMember(member)}
               >
                 <img
-                  src={member.image || "https://via.placeholder.com/100"} // Default image
+                  src={member.image || "https://via.placeholder.com/100"}
                   alt={member.name}
                   className="w-28 h-28 object-cover rounded-full border-4 border-gray-300 shadow-sm transition-transform hover:rotate-3"
                 />
