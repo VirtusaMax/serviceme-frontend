@@ -38,7 +38,7 @@ const Register: React.FC<RegisterProps> = ({ profiles }) => {
           <div className="mt-8 flex justify-center lg:justify-start">
             <Dialog>
               <DialogTrigger asChild>
-                <button className="inline-block px-2 py-1 sm:px-7 sm:py-4 bg-custom-yellow text-custom-blue font-semibold text-base sm:text-lg rounded-full shadow-md hover:shadow-lg hover:bg-custom-white transition-transform duration-300 transform hover:scale-105">
+                <button className="inline-block px-1 py-1 sm:px-7 sm:py-4 bg-custom-yellow text-custom-blue font-semibold text-base sm:text-lg rounded-xl shadow-md hover:shadow-lg hover:bg-custom-white transition-transform duration-300 transform hover:scale-105">
                   REGISTER NOW
                 </button>
               </DialogTrigger>
@@ -85,7 +85,7 @@ const Register: React.FC<RegisterProps> = ({ profiles }) => {
 
                     <Dialog>
                       <DialogTrigger asChild>
-                        <button className="mt-3 px-4 py-2 text-sm bg-yellow-500 text-custom-blue font-medium rounded-lg hover:bg-custom-white transition duration-300">
+                        <button className="mt-3 px-4 py-2 text-sm bg-yellow-500 text-custom-blue font-medium hover:bg-custom-white transition duration-300 rounded-xl">
                           View Profile
                         </button>
                       </DialogTrigger>
