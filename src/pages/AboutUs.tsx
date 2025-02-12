@@ -13,45 +13,65 @@ const AboutUsPage = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   return (
-    <div className="my-12 max-w-[1600px] mx-auto flex flex-col w-full items-center px-4 py-3 bg-gradient-to-b from-white to-white">
-      {/* Cover Section */}
-      <div 
-        className="relative w-full max-w-[1600px] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] bg-center bg-no-repeat bg-cover"
-        style={{ backgroundImage: "url('/about_section/about.png')" }}
+    <div className="my-16 max-w-[1600px] mx-auto flex flex-col w-full items-center py-6 bg-gradient-to-b from-gray-50 to-gray-200">
+      {/* Cover Section with Responsive Background Image */}
+      <div
+        className="relative w-full max-w-[1600px] h-[360px] md:h-[420px] bg-center bg-no-repeat bg-cover"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent flex flex-col justify-center items-center text-center px-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-custom-blue uppercase">About Us</h1>
-          <p className="text-base sm:text-lg md:text-xl text-white mt-4 max-w-3xl">Fix, Build, Repair - All on ServiceMe!</p>
-        </div>
+        <picture>
+          {/* Extra Small Screens (max-width: 560px) */}
+          <source srcSet="/about_section/about_xs.png" media="(max-width: 560px)" />
+
+          {/* Small Screens (max-width: 640px) */}
+          <source srcSet="/about_section/about_small.png" media="(max-width: 640px)" />
+
+          {/* Medium Screens (max-width: 1024px) */}
+          <source srcSet="/about_section/about_medium.png" media="(max-width: 1024px)" />
+
+          {/* Large Screens (default) */}
+          <img
+            src="/about_section/about.png"
+            alt="About Us"
+            className="w-full h-full object-cover"
+          />
+        </picture>
       </div>
 
-      {/* About Us Sections */}
-      {[{
-        title: "Who We Are",
-        highlight: "Making Home Services Effortless",
-        content: "ServiceMe is the leading platform connecting individuals with skilled, pre-screened professionals for household services. From home cleaning to repairs, we ensure every customer gets high-quality assistance quickly and reliably. With an easy-to-use booking system, secure payment options, and trusted professionals, we make home maintenance stress-free."
-      }, {
-        title: "Our Story",
-        highlight: "",
-        content: "ServiceMe was founded with a simple mission: to make home services accessible and convenient. It all started when our founder faced the frustration of finding reliable repair services. Seeing a gap in the market, we built ServiceMe as a seamless solution, ensuring skilled professionals are just a click away. Today, we help thousands of customers connect with trusted experts, making everyday tasks easier than ever."
-      }, {
-        title: "Thank You",
-        highlight: "",
-        content: "Thank you to everyone who has contributed to the growth of ServiceMe. From our early team members who helped shape the platform to the dedicated professionals who deliver top-notch services every day, your efforts have been invaluable. ServiceMe is more than just an app—it’s a community built on trust, convenience, and excellence."
-      }].map(({ title, highlight, content }, index) => (
-        <div key={index} className="w-full max-w-[1200px] bg-white shadow-lg py-12 px-6 sm:px-10 md:px-12 rounded-xl mt-10 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-          <h2 className="text-2xl font-bold uppercase text-custom-yellow tracking-wide">{title}</h2>
-          {highlight && <p className="text-3xl font-bold max-w-3xl mt-6 text-custom-blue">{highlight}</p>}
-          <p className="text-gray-600 max-w-3xl mt-4">{content}</p>
-        </div>
-      ))}
+      {/* About Us Section */}
+      <div className="w-full max-w-4xl text-justify mt-12 px-4">
+        <h2 className="text-2xl font-bold uppercase text-custom-yellow tracking-wide">About ServiceMe</h2>
+        <p className="text-gray-600 mt-4">
+          ServiceMe is the leading platform connecting individuals with skilled, pre-screened professionals for household services. From home cleaning to handyman tasks, ServiceMe seamlessly matches thousands of customers every week with top-rated experts across various cities. With an easy-to-use booking system, secure payments, and a commitment to customer satisfaction, ServiceMe makes home maintenance effortless, reliable, and stress-free.
+        </p>
+      </div>
+
+      {/* Our Story Section */}
+      <div className="w-full max-w-4xl text-justify mt-12 px-4">
+        <h3 className="text-2xl font-bold uppercase text-custom-yellow tracking-wide">Our Story</h3>
+        <p className="text-gray-600 mt-4">
+          ServiceMe was founded with a simple mission: to make home services more accessible and convenient. The idea was born from a common frustration—finding reliable professionals for household tasks. Our founder faced challenges in locating skilled service providers who were trustworthy and efficient. Recognizing this gap, we built ServiceMe as a seamless solution to connect customers with top-rated, pre-screened professionals. With a commitment to reliability, convenience, and customer satisfaction, ServiceMe has grown into a trusted platform, making home maintenance stress-free for everyone.
+        </p>
+      </div>
+
+      <div className="w-full max-w-4xl text-justify mt-12 px-4">
+        <p className="text-gray-600 mt-4">
+          <strong>Thank you to the many people who helped ServiceMe get started.</strong>
+        </p>
+        <p className="text-gray-600 mt-4">
+          From our early team members who shaped the platform to the dedicated professionals who deliver top-quality services daily, your contributions have been invaluable. A special thanks to our early supporters, developers, and investors who believed in our mission to simplify home services. Your dedication and hard work have helped us expand, reaching more cities and connecting more customers with trusted professionals.
+        </p>
+        <p className="text-gray-600 mt-4">
+          <strong>Thank you to the many people who’ve subsequently joined the team and invested in ServiceMe.</strong>
+          It’s because of your support that we continue to grow, remaining committed to innovation, reliability, and customer satisfaction. ServiceMe is more than just a platform—it’s a community built on trust, convenience, and excellence.
+        </p>
+      </div>
 
       {/* Leadership Team Section */}
-      <div className="w-full max-w-6xl mx-auto mt-16 px-4">
+      <div className="w-full max-w-6xl mx-auto mt-16 px-6">
         <h3 className="text-3xl font-bold text-center text-custom-blue">Leadership Team</h3>
         <p className="text-center text-gray-600 max-w-xl mx-auto mt-2">Meet the talented individuals leading the way.</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-10">
           {teamMembers?.length > 0 ? (
             teamMembers.map((member: TeamMember, index: number) => (
               <div
