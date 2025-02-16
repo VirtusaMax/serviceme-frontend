@@ -5,9 +5,10 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/24/solid";
 import logo from "/header_section/logo1.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Dialog, DialogTrigger, DialogPortal, DialogOverlay, DialogContent } from "@radix-ui/react-dialog";
 import PostJobDialogContent from "@/components/dialog/PostJobDialogContent";
+import { IoNotificationsOutline } from "react-icons/io5"; // Import Icons
 
 const Navbar: React.FC = () => {
   const Links = [
@@ -18,6 +19,11 @@ const Navbar: React.FC = () => {
   ];
 
   const [isOpen, setIsOpen] = useState(false);
+
+  // Function to close the mobile menu when a link is clicked
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="z-50 shadow-md w-full fixed top-0 left-0 border-b-4 border-white">
@@ -37,23 +43,19 @@ const Navbar: React.FC = () => {
 
         {/* Navbar Links */}
         <ul
-          className={`md:flex md:items-center md:ml-auto md:pb-0 pb-14 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-12 transition-all bg-[#0E0524] text-white duration-500 ease-in ${isOpen ? "top-14" : "top-[-490px]"
-            } md:space-x-4 space-x-0`}
+          className={`md:flex md:items-center md:ml-auto md:pb-0 pb-14 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-12 transition-all bg-[#0E0524] text-white duration-500 ease-in ${isOpen ? "top-14" : "top-[-490px]"} md:space-x-4 space-x-0`}
         >
           {Links.map((link, index) => (
-            <li
-              key={index}
-              className="font-inter font-semibold my-7 md:my-0 md:ml-8"
-            >
+            <li key={index} className="font-inter font-semibold my-7 md:my-0 md:ml-8">
               <Link
                 to={link.link}
                 className="text-white hover:underline hover:text-yellow-400 transition-all"
+                onClick={handleLinkClick} // Close the menu on link click
               >
                 {link.name}
               </Link>
             </li>
           ))}
-
 
           <li className="md:ml-8 my-7 md:my-0">
             <Dialog>
@@ -79,6 +81,14 @@ const Navbar: React.FC = () => {
             <UserCircleIcon className="w-10 h-10 text-white cursor-pointer hover:text-yellow-400 transition-all" />
           </li>
         </ul>
+
+        {/* Mobile View - Find Work & Notifications */}
+        <div className="md:hidden flex items-center space-x-3 sm:space-x-5">
+          <button className="px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm bg-yellow-500 text-gray-900 font-semibold rounded-md shadow-md hover:bg-yellow-400 transition-all">
+            Find Work
+          </button>
+          <IoNotificationsOutline className="text-xl sm:text-2xl cursor-pointer text-white hover:text-yellow-500 transition-all" />
+        </div>
       </div>
     </div>
   );

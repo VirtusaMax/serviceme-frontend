@@ -2,47 +2,48 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import JobCard from "../components/custom-components/service_provider/JobCard";
 import TopNavbar from "../components/custom-components/topNavbar/TopNavBar";
-import jobsData from "../data/jobs.json";
+import jobsData from "../data/jobs.json"; // Ensure this is correctly structured
 
-type Job = {
+interface Job {
   name: string;
   location: string;
-  phone: string;
-  date: string;
-  profileImage: string;
-  category: string;
-};
+  rating: number;
+  image: string;
+  description: string;
+  category: string; // Add category field here
+}
 
 const ServiceProvider: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("ALL");
   const [jobs, setJobs] = useState<Job[]>([]);
 
   useEffect(() => {
-    setJobs(jobsData);
+    setJobs(jobsData); // Ensure jobsData is properly imported and its type matches 'Job[]'
   }, []);
 
   const filteredJobs =
     selectedCategory === "ALL"
       ? jobs
-      : jobs.filter((job) => job.category === selectedCategory);
+      : jobs.filter((job) => job.category.toLowerCase() === selectedCategory.toLowerCase());
 
-  // Handle View Profile button click
   const handleViewProfile = (job: Job) => {
     console.log(`Viewing profile of ${job.name}`);
-    // You can navigate to a profile page or open a modal here
+    // Logic to navigate to profile or show modal
   };
 
   return (
     <>
+      {/* Top Navigation */}
       <div className="fixed top-14 w-full z-40 pt-5">
         <TopNavbar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </div>
 
+      {/* Jobs Section */}
       <div className="w-full py-16 pt-36 flex flex-col items-center">
-        <div className="w-full flex flex-wrap justify-center bg-opacity-50 p-6 rounded-lg shadow-lg min-h-[80vh] pt-5">
+        <div className="w-full flex flex-wrap justify-center bg-opacity-50 p-4 rounded-lg shadow-lg min-h-[80vh] pt-5">
           {filteredJobs.length > 0 ? (
             <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full max-w-7xl px-4 pt-10 auto-rows-min"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-7xl px-4 pt-10 auto-rows-min"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
@@ -58,8 +59,10 @@ const ServiceProvider: React.FC = () => {
                   <JobCard
                     name={job.name}
                     location={job.location}
-                    phone={job.phone}
-                    image={job.profileImage}
+                    rating={job.rating}
+                    image={job.image}
+                    description={job.description}
+                    category={job.category} // Pass category prop here
                     onViewProfile={() => handleViewProfile(job)}
                   />
                 </motion.div>
