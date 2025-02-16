@@ -2,129 +2,129 @@
   {
     "name": "Alice M.",
     "location": "Colombo",
-    "phone": "070 423####",
-    "date": "Feb 2023",
-    "profileImage": "service_provider/workprofile1.jpeg",
+    "rating": 4.5,
+    "image": "service_provider/workprofile1.jpeg",
+    "description": "Expert in deep cleaning and sanitation services.",
     "category": "Cleaner"
   },
   {
     "name": "Chris L.",
     "location": "Kandy",
-    "phone": "070 123####",
-    "date": "Oct 2019",
-    "profileImage": "service_provider/workprofile2.jpg",
+    "rating": 4.7,
+    "image": "service_provider/workprofile2.jpg",
+    "description": "Professional chef with a passion for culinary excellence.",
     "category": "Chef"
   },
   {
     "name": "Ben R.",
     "location": "Matara",
-    "phone": "070 432####",
-    "date": "Jan 2020",
-    "profileImage": "service_provider/workprofile3.png",
+    "rating": 4.8,
+    "image": "service_provider/workprofile3.png",
+    "description": "Skilled painter specializing in home and commercial projects.",
     "category": "Painter"
   },
   {
     "name": "Mark T.",
     "location": "Batticaloa",
-    "phone": "070 655####",
-    "date": "Feb 2021",
-    "profileImage": "service_provider/workprofile4.png",
+    "rating": 4.6,
+    "image": "service_provider/workprofile4.png",
+    "description": "Experienced mechanic for all vehicle repair needs.",
     "category": "Mechanic"
   },
   {
     "name": "Ryan D.",
     "location": "Colombo",
-    "phone": "070 222####",
-    "date": "Jan 2023",
-    "profileImage": "service_provider/workprofile5.png",
+    "rating": 4.5,
+    "image": "service_provider/workprofile5.png",
+    "description": "Certified plumber offering fast and reliable services.",
     "category": "Plumber"
   },
   {
     "name": "Lucy G.",
     "location": "Kandy",
-    "phone": "070 765####",
-    "date": "Mar 2021",
-    "profileImage": "service_provider/workprofile6.png",
+    "rating": 4.4,
+    "image": "service_provider/workprofile6.png",
+    "description": "Beauty expert providing salon-quality treatments.",
     "category": "Beautician"
   },
   {
     "name": "Monica L.",
     "location": "Colombo",
-    "phone": "070 234####",
-    "date": "Jun 2021",
-    "profileImage": "service_provider/workprofile7.png",
+    "rating": 4.6,
+    "image": "service_provider/workprofile7.png",
+    "description": "Loving and experienced childcare provider.",
     "category": "ChildCare"
   },
   {
     "name": "Daniel A.",
     "location": "Batticaloa",
-    "phone": "070 876####",
-    "date": "Sep 2021",
-    "profileImage": "service_provider/workprofile8.jpg",
+    "rating": 4.5,
+    "image": "service_provider/workprofile8.jpg",
+    "description": "Professional driver ensuring safe and comfortable rides.",
     "category": "Driver"
   },
   {
     "name": "James T.",
     "location": "Galle",
-    "phone": "070 895####",
-    "date": "Nov 2021",
-    "profileImage": "service_provider/workprofile9.png",
+    "rating": 4.7,
+    "image": "service_provider/workprofile9.png",
+    "description": "Expert in deep cleaning and sanitation services.",
     "category": "Cleaner"
   },
   {
     "name": "Tina W.",
     "location": "Kurunegala",
-    "phone": "070 987####",
-    "date": "Dec 2022",
-    "profileImage": "service_provider/workprofile10.jpg",
+    "rating": 4.6,
+    "image": "service_provider/workprofile10.jpg",
+    "description": "Professional chef with a passion for culinary excellence.",
     "category": "Chef"
   },
   {
     "name": "Jessica F.",
     "location": "Jaffna",
-    "phone": "070 564####",
-    "date": "Apr 2022",
-    "profileImage": "service_provider/workprofile11.jpg",
+    "rating": 4.5,
+    "image": "service_provider/workprofile11.jpg",
+    "description": "Skilled painter specializing in home and commercial projects.",
     "category": "Painter"
   },
   {
     "name": "Sam W.",
     "location": "Negombo",
-    "phone": "070 543####",
-    "date": "Nov 2020",
-    "profileImage": "service_provider/workprofile12.png",
+    "rating": 4.8,
+    "image": "service_provider/workprofile12.png",
+    "description": "Experienced mechanic for all vehicle repair needs.",
     "category": "Mechanic"
   },
   {
     "name": "Alex P.",
     "location": "Galle",
-    "phone": "070 888####",
-    "date": "May 2022",
-    "profileImage": "service_provider/workprofile13.png",
+    "rating": 4.7,
+    "image": "service_provider/workprofile13.png",
+    "description": "Certified plumber offering fast and reliable services.",
     "category": "Plumber"
   },
   {
     "name": "Sophia M.",
     "location": "Kurunegala",
-    "phone": "070 432####",
-    "date": "Oct 2020",
-    "profileImage": "service_provider/workprofile14.png",
+    "rating": 4.5,
+    "image": "service_provider/workprofile14.png",
+    "description": "Beauty expert providing salon-quality treatments.",
     "category": "Beautician"
   },
   {
     "name": "Emily H.",
     "location": "Matara",
-    "phone": "070 654####",
-    "date": "Dec 2020",
-    "profileImage": "service_provider/workprofile15.png",
+    "rating": 4.6,
+    "image": "service_provider/workprofile15.png",
+    "description": "Loving and experienced childcare provider.",
     "category": "ChildCare"
   },
   {
     "name": "Jack B.",
     "location": "Galle",
-    "phone": "070 234####",
-    "date": "Apr 2020",
-    "profileImage": "service_provider/workprofile16.png",
+    "rating": 4.9,
+    "image": "service_provider/workprofile16.png",
+    "description": "Professional driver ensuring safe and comfortable rides.",
     "category": "Driver"
   }
 ]
