@@ -37,7 +37,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ name, img, img1, description 
 
       {/* Button Placement */}
       <div className="flex justify-center mt-auto">
-        <button className="bg-[#FCC215] text-[#0E0524] text-xs h-[36px] w-[140px] px-4 py-0 rounded-full mt-2">
+        <button className="bg-[#FCC215] text-[#0E0524] text-xs h-[36px] w-[120px] px-4 py-0 rounded-xl mt-2">
           {name}
         </button>
       </div>

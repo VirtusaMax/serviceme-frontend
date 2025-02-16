@@ -2,49 +2,49 @@
     {
       "name": "Chalani Jayakodi",
       "location": "Mahawagama",
+      "title": "We're Hiring a Reliable Cleaner! Join Us!",
       "category": "Cleaner",
-      "profileImage": "public/post_job/pro-2.jpeg",
-      "description": "I need a House Cleaner..............",
+      "description": "We are looking for a cleaner who is dedicated to working efficiently. Responsibilities include general cleaning, dusting, vacuuming, and maintaining cleanliness. Flexible hours and competitive pay.",
       "date": "2024/12/18"
     },
     {
       "name": "Vidusha",
       "location": "Colombo",
+      "title": "Hiring a Skilled Painter! Join Today!",
       "category": "Painter",
-      "profileImage": "public/post_job/pro-2.jpeg",
-      "description": "Looking for a reliable house cleaner.",
+      "description": "We seek a skilled painter who pays attention to detail and works efficiently. Responsibilities include preparing surfaces, applying paint, and ensuring a high-quality finish. Flexible hours and competitive pay.",
       "date": "2024/12/20"
     },
     {
         "name": "Chalani Jayakodi",
         "location": "Mahawagama",
+        "title": "Seeking a Talented Chef! Apply Today!",
         "category": "Chef",
-        "profileImage": "public/post_job/pro-2.jpeg",
-        "description": "I need a House Cleaner..............",
+        "description": "We are seeking a talented chef with a passion for cooking. Responsibilities include preparing delicious meals, maintaining kitchen hygiene, and ensuring food quality. Flexible hours and competitive pay.",
         "date": "2024/12/18"
     },
     {
         "name": "Dinithi",
         "location": "Colombo",
-        "category": "Cleaner",
-        "profileImage": "public/post_job/pro-2.jpeg",
-        "description": "Looking for a reliable house cleaner.",
+        "title": "Looking for a Responsible Driver! Apply Now!",
+        "category": "Driver",
+        "description": "We are hiring a responsible driver with a good driving record. Duties include safely transporting goods or passengers, following routes, and maintaining the vehicle. We offer flexible hours and competitive pay.",
         "date": "2024/12/20"
     },
     {
         "name": "Chalani Jayakodi",
         "location": "Mahawagama",
+        "title": "Hiring a Reliable Cleaner! Join Our Team!",
         "category": "Cleaner",
-        "profileImage": "public/post_job/pro-2.jpeg",
-        "description": "I need a House Cleaner..............",
+        "description": "We are looking for a hardworking and detail-oriented cleaner to maintain cleanliness and hygiene. Responsibilities include sweeping, mopping, dusting, vacuuming, and general cleaning tasks. Flexible hours and competitive pay.",
         "date": "2024/12/18"
     },
       {
         "name": "John Doe",
         "location": "Colombo",
-        "category": "Cleaner",
-        "profileImage": "public/post_job/pro-2.jpeg",
-        "description": "Looking for a reliable house cleaner.",
+        "title": "Looking for a Skilled Plumber! Apply Now!",
+        "category": "Plumber",
+        "description": "We are hiring an experienced plumber to handle installations, repairs, and maintenance of plumbing systems. Responsibilities include fixing leaks, unclogging drains, and ensuring proper water flow. Competitive pay and flexible working hours.",
         "date": "2024/12/20"
     }
   ]
