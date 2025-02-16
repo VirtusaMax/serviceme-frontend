@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile View - Find Work & Notifications */}
         <div className="md:hidden flex items-center space-x-3 sm:space-x-5">
-          <button className="px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm bg-yellow-500 text-gray-900 font-semibold rounded-md shadow-md hover:bg-yellow-400 transition-all">
+          <button className="px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm bg-yellow-500 text-gray-900 font-semibold shadow-md hover:bg-yellow-400 transition-all">
             Find Work
           </button>
           <IoNotificationsOutline className="text-xl sm:text-2xl cursor-pointer text-white hover:text-yellow-500 transition-all" />
