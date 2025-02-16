@@ -62,7 +62,7 @@ const AboutUsPage = () => {
         </p>
         <p className="text-gray-600 mt-4">
           <strong>Thank you to the many people who’ve subsequently joined the team and invested in ServiceMe.</strong>
-          It’s because of your support that we continue to grow, remaining committed to innovation, reliability, and customer satisfaction. ServiceMe is more than just a platform—it’s a community built on trust, convenience, and excellence.
+          It’s because of your support that we continue to grow, remaining committed to innovation, reliability, and customer satisfaction. ServiceMe is more than just a platform it’s a community built on trust, convenience, and excellence.
         </p>
       </div>
 
