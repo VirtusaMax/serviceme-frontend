@@ -20,7 +20,11 @@ const TopNavbar: React.FC<TopNavbarProps> = ({ selectedCategory, setSelectedCate
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 text-sm rounded-xl transition-all ${selectedCategory.toLowerCase() === category.toLowerCase() ? "bg-yellow-500 text-gray-900 font-semibold" : "bg-gray-700 hover:bg-gray-600"}`}
+              className={`px-6 py-3 text-sm font-semibold rounded-2xl transition-all ${
+                selectedCategory.toLowerCase() === category.toLowerCase()
+                  ? "bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 shadow-lg"
+                  : "bg-gray-700 hover:bg-gray-600 hover:scale-105 transform duration-300"
+              }`}
             >
               {category}
             </button>
