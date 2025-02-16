@@ -26,7 +26,7 @@ const ContactPage: React.FC = () => {
       {/* Main Content */}
       <main className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Form */}
-        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+        <div className="bg-white p-8 shadow-lg border border-gray-200 rounded-xl">
           <h2 className="text-3xl font-semibold text-gray-900 mb-6">Send Us a Message</h2>
           <form className="space-y-6">
             <div>
@@ -55,7 +55,7 @@ const ContactPage: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-gray-800 text-white px-6 py-3 rounded-md shadow-md hover:bg-gray-900 transition"
+              className="w-full bg-gray-800 text-white px-6 py-3  shadow-md hover:bg-gray-900 transition rounded-xl"
             >
               Submit
             </button>
@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+        <div className="bg-white p-8  shadow-lg border border-gray-200 rounded-xl">
           <h2 className="text-3xl font-semibold text-gray-900 mb-6">Contact Details</h2>
           <p className="text-lg text-gray-700">Have questions? Feel free to reach us through the following channels:</p>
           <div className="mt-8 space-y-6">
