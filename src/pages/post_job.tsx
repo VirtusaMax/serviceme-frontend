@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import jobData from "../data/postJobCardData.json";
 import TopNavbar from "../components/custom-components/topNavbar/TopNavBar";
-import { FaEdit, FaTrashAlt } from "react-icons/fa";
+
 import { MdDateRange, MdLocationOn } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 
