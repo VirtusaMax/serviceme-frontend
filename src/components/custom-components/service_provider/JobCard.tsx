@@ -9,7 +9,6 @@ interface JobCardProps {
   image: string;
   description: string;
   category: string; // Add category field
-  onViewProfile: () => void;
 }
 
 const JobCard: React.FC<JobCardProps> = ({
@@ -19,19 +18,18 @@ const JobCard: React.FC<JobCardProps> = ({
   image,
   description,
   category, // Accept category prop
-  onViewProfile,
 }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="w-full max-w-[280px] bg-white border-2 border-black rounded-2xl shadow-lg overflow-hidden flex flex-col"
+      className="w-full max-w-[350px] sm:max-w-[280px] bg-white border-2 border-black rounded-xl shadow-lg overflow-hidden flex flex-col"
     >
-      {/* Image Section with margin and rounded corners */}
-      <div className="w-full h-40 overflow-hidden p-3">
+      {/* Image Section with rounded image */}
+      <div className="w-full h-52 p-3 overflow-hidden">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover rounded-xl" // Fully rounded corners (circle)
+          className="w-full h-full object-cover rounded-xl"
         />
       </div>
 
@@ -54,19 +52,11 @@ const JobCard: React.FC<JobCardProps> = ({
 
         {/* Category */}
         <div className="text-sm text-gray-600 mt-2">
-          <p className="font-semibold text-gray-800">{category}</p> 
+          <p className="font-semibold text-gray-800">{category}</p>
         </div>
 
         {/* Description */}
         <p className="text-sm text-gray-600 mt-2">{description}</p>
-
-        {/* View Profile Button */}
-        <button
-          onClick={onViewProfile}
-          className="mt-4 text-blue-600 hover:text-blue-800 text-sm font-semibold"
-        >
-          View Profile
-        </button>
       </div>
     </motion.div>
   );
