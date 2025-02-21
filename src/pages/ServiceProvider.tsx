@@ -26,11 +26,6 @@ const ServiceProvider: React.FC = () => {
       ? jobs
       : jobs.filter((job) => job.category.toLowerCase() === selectedCategory.toLowerCase());
 
-  const handleViewProfile = (job: Job) => {
-    console.log(`Viewing profile of ${job.name}`);
-    // Logic to navigate to profile or show modal
-  };
-
   return (
     <>
       {/* Top Navigation */}
@@ -63,7 +58,6 @@ const ServiceProvider: React.FC = () => {
                     image={job.image}
                     description={job.description}
                     category={job.category} // Pass category prop here
-                    onViewProfile={() => handleViewProfile(job)}
                   />
                 </motion.div>
               ))}
