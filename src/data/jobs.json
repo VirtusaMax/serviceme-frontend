@@ -1,130 +1,566 @@
 [
   {
+    "id": 1,
     "name": "Alice M.",
     "location": "Colombo",
     "rating": 4.5,
-    "image": "service_provider/workprofile1.jpeg",
+    "image": "/service_provider/workprofile1.jpeg",
     "description": "Expert in deep cleaning and sanitation services.",
-    "category": "Cleaner"
+    "about": "I have over 5 years of experience in deep cleaning and sanitation. I specialize in both residential and commercial cleaning, ensuring a spotless environment for my clients.",
+    "category": "Cleaner",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p3.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Colombo",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Colombo",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 2,
     "name": "Chris L.",
     "location": "Kandy",
     "rating": 4.7,
-    "image": "service_provider/workprofile2.jpg",
+    "image": "/service_provider/workprofile2.jpg",
     "description": "Professional chef with a passion for culinary excellence.",
-    "category": "Chef"
+    "about": "I have over 5 years of experience in deep cleaning and sanitation. I specialize in both residential and commercial cleaning, ensuring a spotless environment for my clients.",
+    "category": "Chef",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p2.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 3,
     "name": "Ben R.",
     "location": "Matara",
     "rating": 4.8,
-    "image": "service_provider/workprofile3.png",
+    "image": "/service_provider/workprofile3.png",
     "description": "Skilled painter specializing in home and commercial projects.",
-    "category": "Painter"
+    "category": "Painter",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p1.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p2.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 4,
     "name": "Mark T.",
     "location": "Batticaloa",
     "rating": 4.6,
-    "image": "service_provider/workprofile4.png",
+    "image": "/service_provider/workprofile4.png",
     "description": "Experienced mechanic for all vehicle repair needs.",
-    "category": "Mechanic"
+    "category": "Mechanic",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 5,
     "name": "Ryan D.",
     "location": "Colombo",
     "rating": 4.5,
-    "image": "service_provider/workprofile5.png",
+    "image": "/service_provider/workprofile5.png",
     "description": "Certified plumber offering fast and reliable services.",
-    "category": "Plumber"
+    "category": "Plumber",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 6,
     "name": "Lucy G.",
     "location": "Kandy",
     "rating": 4.4,
-    "image": "service_provider/workprofile6.png",
+    "image": "/service_provider/workprofile6.png",
     "description": "Beauty expert providing salon-quality treatments.",
-    "category": "Beautician"
+    "category": "Beautician",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 7,
     "name": "Monica L.",
     "location": "Colombo",
     "rating": 4.6,
-    "image": "service_provider/workprofile7.png",
+    "image": "/service_provider/workprofile7.png",
     "description": "Loving and experienced childcare provider.",
-    "category": "ChildCare"
+    "category": "ChildCare",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 8,
     "name": "Daniel A.",
     "location": "Batticaloa",
     "rating": 4.5,
-    "image": "service_provider/workprofile8.jpg",
+    "image": "/service_provider/workprofile8.jpg",
     "description": "Professional driver ensuring safe and comfortable rides.",
-    "category": "Driver"
+    "category": "Driver",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 9,
     "name": "James T.",
     "location": "Galle",
     "rating": 4.7,
-    "image": "service_provider/workprofile9.png",
+    "image": "/service_provider/workprofile9.png",
     "description": "Expert in deep cleaning and sanitation services.",
-    "category": "Cleaner"
+    "category": "Cleaner",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 10,
     "name": "Tina W.",
     "location": "Kurunegala",
     "rating": 4.6,
-    "image": "service_provider/workprofile10.jpg",
+    "image": "/service_provider/workprofile10.jpg",
     "description": "Professional chef with a passion for culinary excellence.",
-    "category": "Chef"
+    "category": "Chef",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 11,
     "name": "Jessica F.",
     "location": "Jaffna",
     "rating": 4.5,
-    "image": "service_provider/workprofile11.jpg",
+    "image": "/service_provider/workprofile11.jpg",
     "description": "Skilled painter specializing in home and commercial projects.",
-    "category": "Painter"
+    "category": "Painter",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p2.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 12,
     "name": "Sam W.",
     "location": "Negombo",
     "rating": 4.8,
-    "image": "service_provider/workprofile12.png",
+    "image": "/service_provider/workprofile12.png",
     "description": "Experienced mechanic for all vehicle repair needs.",
-    "category": "Mechanic"
+    "category": "Mechanic",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p2.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p3.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 13,
     "name": "Alex P.",
     "location": "Galle",
     "rating": 4.7,
-    "image": "service_provider/workprofile13.png",
+    "image": "/service_provider/workprofile13.png",
     "description": "Certified plumber offering fast and reliable services.",
-    "category": "Plumber"
+    "category": "Plumber",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p1.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 14,
     "name": "Sophia M.",
     "location": "Kurunegala",
     "rating": 4.5,
-    "image": "service_provider/workprofile14.png",
+    "image": "/service_provider/workprofile14.png",
     "description": "Beauty expert providing salon-quality treatments.",
-    "category": "Beautician"
+    "category": "Beautician",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p3.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 15,
     "name": "Emily H.",
     "location": "Matara",
     "rating": 4.6,
-    "image": "service_provider/workprofile15.png",
+    "image": "/service_provider/workprofile15.png",
     "description": "Loving and experienced childcare provider.",
-    "category": "ChildCare"
+    "category": "ChildCare",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p2.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p3.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      }
+    ]
   },
   {
+    "id": 16,
     "name": "Jack B.",
     "location": "Galle",
     "rating": 4.9,
-    "image": "service_provider/workprofile16.png",
+    "image": "/service_provider/workprofile16.png",
     "description": "Professional driver ensuring safe and comfortable rides.",
-    "category": "Driver"
+    "category": "Driver",
+    "reviews": [
+      {
+        "name": "John Doe",
+        "rating": 5,
+        "profileImage": "/about_section/p1.webp",
+        "comment": "Great experience working with this developer!",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+
+      },
+      {
+        "name": "Jane Smith",
+        "rating": 4,
+        "profileImage": "/about_section/p4.webp",
+        "comment": "Good service, but took a little longer than expected.",
+        "date": "2025-02-23",
+        "price": "$150",
+        "duration": "3 days",
+        "location": "Kandy",
+        "sellerResponse": "Thank you for your feedback! Looking forward to working with you again."
+        
+        
+
+      }
+    ]
   }
 ]
