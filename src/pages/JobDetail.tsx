@@ -76,7 +76,7 @@ const JobDetail = () => {
 
       {/* About Gig (About Me) Section */}
       <p className="mt-12 p-8 bg-white rounded-2xl ">
-        <h2 className="text-3xl font-bold text-center mb-4">About Gig</h2>
+        <h2 className="text-3xl font-bold text-center mb-4">About Me</h2>
         <p className="text-gray-700 text-lg text-center">{job.about}</p>
       </p>
 
