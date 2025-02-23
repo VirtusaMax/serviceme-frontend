@@ -76,13 +76,13 @@ const AboutUsPage = () => {
             teamMembers.map((member: TeamMember, index: number) => (
               <div
                 key={index}
-                className="flex flex-col items-center bg-white shadow-md rounded-xl p-6 transition-all transform hover:scale-105 hover:shadow-2xl cursor-pointer"
+                className="flex flex-col items-center bg-white shadow-md rounded-xl p-6 transition-all transform  cursor-pointer"
                 onClick={() => setSelectedMember(member)}
               >
                 <img
                   src={member.image || "https://via.placeholder.com/100"}
                   alt={member.name}
-                  className="w-28 h-28 object-cover rounded-full border-4 border-gray-300 shadow-sm transition-transform hover:rotate-3"
+                  className="w-28 h-28 object-cover rounded-full border-4 border-gray-300 shadow-sm transition-transform"
                 />
                 <p className="mt-4 font-semibold text-lg text-gray-900">{member.name}</p>
                 <p className="text-sm text-gray-500">{member.position}</p>
