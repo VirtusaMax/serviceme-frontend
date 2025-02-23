@@ -22,14 +22,17 @@ const JobCard: React.FC<JobCardProps> = ({
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="w-full max-w-[350px] sm:max-w-[280px] bg-white border-2 border-black rounded-xl shadow-lg overflow-hidden flex flex-col"
+      className="w-full max-w-[520px] sm:max-w-[280px] bg-white border-2 border-black rounded-xl shadow-lg overflow-hidden flex flex-col"
     >
       {/* Image Section with rounded image */}
-      <div className="w-full h-52 p-3 overflow-hidden">
+      <div className="w-full sm:h-52 p-3 overflow-hidden">
         <img
           src={image}
           alt={name}
           className="w-full h-full object-cover rounded-xl"
+          onError={(e) => {
+            e.currentTarget.src = "/path/to/default-image.jpg"; // Fallback image
+          }}
         />
       </div>
 
