@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import jobData from "../data/postJobCardData.json";
 import TopNavbar from "../components/custom-components/topNavbar/TopNavBar";
-import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import { MdDateRange, MdLocationOn } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 
@@ -22,17 +21,17 @@ const PostJob = () => {
       {/* Cards Section */}
       <div className="grid sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 gap-7 flex-1 mt-24  ">
         {filteredJobs.slice(0, 6).map((job, i) => (
-          // 
+          
           <div
          key={i}
-          className="relative bg-gray-100 shadow-md rounded-lg p-4 border border-gray-200 hover:shadow-lg transition duration-300 flex flex-col h-auto sm:h-[400px] md:h-[400px] lg:h-[300px] overflow-hidden"
+          className="relative bg-gray-100 shadow-md rounded-xl p-4 border border-gray-200 hover:shadow-lg transition duration-300 flex flex-col h-auto sm:h-[300px] md:h-[300px] lg:h-[300px] overflow-hidden"
            >
             {/* Title */}
             <h4 className="font-semibold text-gray-900 text-lg">{job.title}</h4>
             <p className="text-gray-600 font-medium">{job.name}</p>
 
             {/* Date and Location */}
-            <div className="flex items-center text-gray-600 text-sm my-2">
+            <div className="flex items-center text-gray-800 text-sm my-2">
               <MdDateRange className="mr-1 text-blue-500" />
               <span className="mr-3">{job.date}</span>
               <MdLocationOn className="mr-1 text-red-500" />
@@ -50,12 +49,13 @@ const PostJob = () => {
                 <IoClose className="ml-2 text-gray-500 cursor-pointer hover:text-gray-700" />
               </span>
             </div>
+
       {/* Contact and Share Buttons */}
            <div className="flex justify-end mt-4 gap-2">
-             <button className="bg-[#0E0524] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
+             <button className="bg-[#0E0524] text-white px-4 py-2 rounded-xl text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
              Share
             </button>
-            <button className="bg-[#0E0524] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
+            <button className="bg-[#0E0524] text-white px-4 py-2 rounded-xl text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
              Contact
            </button>
            </div>
