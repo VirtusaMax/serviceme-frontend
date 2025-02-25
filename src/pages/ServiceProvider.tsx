@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import JobCard from "../components/custom-components/service_provider/JobCard";
 import TopNavbar from "../components/custom-components/topNavbar/TopNavBar";
-import jobsData from "../data/jobs.json"; // Ensure this is correctly structured
+import jobsData from "../data/jobs.json";
 
 interface Job {
   name: string;
   location: string;
   rating: number;
-  image: string;
+  images: string[]; // Updated to an array for multiple images
   description: string;
-  category: string; // Add category field here
+  category: string;
 }
 
 const ServiceProvider: React.FC = () => {
@@ -18,7 +18,7 @@ const ServiceProvider: React.FC = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
 
   useEffect(() => {
-    setJobs(jobsData); // Ensure jobsData is properly imported and its type matches 'Job[]'
+    setJobs(jobsData); // Make sure jobsData matches the updated Job interface
   }, []);
 
   const filteredJobs =
@@ -55,9 +55,9 @@ const ServiceProvider: React.FC = () => {
                     name={job.name}
                     location={job.location}
                     rating={job.rating}
-                    image={job.image}
+                    images={job.images} // Pass images array here
                     description={job.description}
-                    category={job.category} // Pass category prop here
+                    category={job.category}
                   />
                 </motion.div>
               ))}
