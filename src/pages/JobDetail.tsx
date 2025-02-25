@@ -5,11 +5,15 @@ import { BiShareAlt } from "react-icons/bi";
 import { FiPlusCircle, FiMinusCircle } from "react-icons/fi"; // Icons for expanding response
 import jobsData from "../data/jobs.json";
 
+interface VisibleResponses {
+  [key: number]: boolean; 
+}
+
 const JobDetail = () => {
   const { jobId } = useParams();
   const job = jobsData.find((job) => job.id === Number(jobId));
   const [isFavorited, setIsFavorited] = useState(false);
-  const [visibleResponses, setVisibleResponses] = useState({});
+  const [visibleResponses, setVisibleResponses] =  useState<VisibleResponses>({});
 
   if (!job) {
     return <div className="text-center text-gray-600 mt-10">Job not found.</div>;
@@ -22,7 +26,7 @@ const JobDetail = () => {
     alert("Job link copied to clipboard!");
   };
 
-  const toggleResponse = (index) => {
+  const toggleResponse = (index : any) => {
     setVisibleResponses((prev) => ({
       ...prev,
       [index]: !prev[index],
