@@ -7,6 +7,7 @@ import FAQPage from "./pages/FaqPage";
 import ContactPage from "./pages/Contact";
 import AboutUsPage from "./pages/AboutUs";
 import PostJob from "./pages/post_job";
+import JobDetail from "./pages/JobDetail";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/services" element={<ServiceProvider />} />
           <Route path="/FAQ" element={<FAQPage />} />
+          <Route path="/job/:jobId" element={<JobDetail />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/postjob" element={<PostJob />} />
         </Routes>
