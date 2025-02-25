@@ -25,7 +25,7 @@ const FAQPage: React.FC = () => {
           </div>
           <div className="relative lg:w-1/2">
             <img
-              src="public/faq_page/pic_1.png"
+              src="/faq_page/pic_1.png"
               alt="FAQ Illustration"
               className="max-w-full h-auto object-cover mx-auto"
             />
