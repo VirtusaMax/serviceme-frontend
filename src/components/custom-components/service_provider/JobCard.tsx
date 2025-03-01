@@ -35,11 +35,13 @@ const JobCard: React.FC<JobCardProps> = ({ name, location, rating, images, descr
 
       {/* Job Details */}
       <div className="mt-4">
-        <h3 className="text-lg font-semibold">{name}</h3>
+        <div className="flex justify-between items-center">
+          <h3 className="text-lg font-semibold">{name}</h3>
+          <p className="text-sm text-yellow-500">⭐ {rating.toFixed(1)}</p>
+        </div>
         <p className="text-sm text-gray-600">{location}</p>
-        <p className="text-sm text-yellow-500">⭐ {rating.toFixed(1)}</p>
         <p className="text-sm text-gray-700 mt-2">{description}</p>
-        <span className="inline-block bg-blue-100 text-blue-700 text-xs px-2 py-1 mt-2 rounded-full">{category}</span>
+        <span className="inline-block bg-blue-100 text-blue-700 text-xs px-2 py-1 mt-2 rounded-[10px]">{category}</span>
       </div>
     </div>
   );

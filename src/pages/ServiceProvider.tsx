@@ -8,7 +8,7 @@ interface Job {
   name: string;
   location: string;
   rating: number;
-  images: string[]; // Updated to an array for multiple images
+  images: string[];
   description: string;
   category: string;
 }
@@ -18,7 +18,7 @@ const ServiceProvider: React.FC = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
 
   useEffect(() => {
-    setJobs(jobsData); // Make sure jobsData matches the updated Job interface
+    setJobs(jobsData);
   }, []);
 
   const filteredJobs =
@@ -38,7 +38,7 @@ const ServiceProvider: React.FC = () => {
         <div className="w-full flex flex-wrap justify-center bg-opacity-50 p-4 rounded-lg shadow-lg min-h-[80vh] pt-5">
           {filteredJobs.length > 0 ? (
             <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-7xl px-4 pt-10 auto-rows-min"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-7xl px-4 pt-10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
@@ -55,7 +55,7 @@ const ServiceProvider: React.FC = () => {
                     name={job.name}
                     location={job.location}
                     rating={job.rating}
-                    images={job.images} // Pass images array here
+                    images={job.images}
                     description={job.description}
                     category={job.category}
                   />

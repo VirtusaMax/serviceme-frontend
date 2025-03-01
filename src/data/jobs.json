@@ -53,7 +53,9 @@
     "rating": 4.5,
     "images": [
       "service_provider/workprofile5.png",
-      "service_provider/workprofile6.jpg"
+      "service_provider/workprofile5_1.jpg",
+      "service_provider/workprofile5_2.jpg"
+
     ],
     "description": "Certified plumber offering fast and reliable services.",
     "category": "Plumber"
@@ -64,7 +66,9 @@
     "rating": 4.4,
     "images": [
       "service_provider/workprofile6.png",
-      "service_provider/workprofile7.jpg"
+      "service_provider/workprofile6_1.jpg",
+      "service_provider/workprofile6_2.jpg"
+
     ],
     "description": "Beauty expert providing salon-quality treatments.",
     "category": "Beautician"
@@ -75,7 +79,8 @@
     "rating": 4.6,
     "images": [
       "service_provider/workprofile7.png",
-      "service_provider/workprofile8.jpg"
+      "service_provider/workprofile7_1.jpg",
+      "service_provider/workprofile7_2.jpg"
     ],
     "description": "Loving and experienced childcare provider.",
     "category": "ChildCare"
@@ -86,7 +91,8 @@
     "rating": 4.5,
     "images": [
       "service_provider/workprofile8.jpg",
-      "service_provider/workprofile9.jpg"
+      "service_provider/workprofile8_1.jpg",
+      "service_provider/workprofile8_2.jpg"
     ],
     "description": "Professional driver ensuring safe and comfortable rides.",
     "category": "Driver"
@@ -143,7 +149,8 @@
     "rating": 4.7,
     "images": [
       "service_provider/workprofile13.png",
-      "service_provider/workprofile14.png"
+      "service_provider/workprofile13_1.png",
+      "service_provider/workprofile13_2.jpg"
     ],
     "description": "Certified plumber offering fast and reliable services.",
     "category": "Plumber"
@@ -165,7 +172,8 @@
     "rating": 4.6,
     "images": [
       "service_provider/workprofile15.png",
-      "service_provider/workprofile16.jpg"
+      "service_provider/workprofile15_1.jpg",
+      "service_provider/workprofile15_2.jpg"
     ],
     "description": "Loving and experienced childcare provider.",
     "category": "ChildCare"
@@ -176,7 +184,8 @@
     "rating": 4.9,
     "images": [
       "service_provider/workprofile16.png",
-      "service_provider/workprofile17.jpg"
+      "service_provider/workprofile16_1.jpg",
+      "service_provider/workprofile16_2.jpg"
     ],
     "description": "Professional driver ensuring safe and comfortable rides.",
     "category": "Driver"
