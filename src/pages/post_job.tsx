@@ -61,10 +61,10 @@ const PostJob = () => {
 
               {/* Contact and Share Buttons */}
               <div className="flex justify-end gap-2">
-                <button className="bg-[#0E0524] text-white px-4 py-1 rounded-[10px] text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
+                <button className="bg-[#0E0524] text-white px-4 py-2 rounded-[10px] text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
                   Share
                 </button>
-                <button className="bg-[#0E0524] text-white px-4 py-1 rounded-[10px] text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
+                <button className="bg-[#0E0524] text-white px-4 py-2 rounded-[10px] text-sm hover:bg-[#FCC215] hover:text-[#0E0524] transition">
                   Contact
                 </button>
               </div>
