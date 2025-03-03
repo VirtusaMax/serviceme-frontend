@@ -9,7 +9,9 @@ const Services: React.FC = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 554) {
+        setVisibleCards(1);
+      } else if (window.innerWidth < 768) {
         setVisibleCards(2);
       } else if (window.innerWidth < 1024) {
         setVisibleCards(3);
@@ -55,12 +57,11 @@ const Services: React.FC = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          {/* Fix: Use conditional class names instead of template literals */}
           <div
             className={`grid gap-4 w-full overflow-hidden ${
               visibleCards === 4 ? "grid-cols-4" :
               visibleCards === 3 ? "grid-cols-3" :
-              "grid-cols-2"
+              visibleCards === 2 ? "grid-cols-2" : "grid-cols-1"
             }`}
           >
             {serviceCardData.slice(currentIndex, currentIndex + visibleCards).map((d, index) => (
