@@ -36,5 +36,17 @@ html {    scrollbar-width: none; /* Firefox */
         display: none !important;
       }
       
+      .swiper-button-next, 
+.swiper-button-prev {
+    scale: 0.5; /* Decrease size */
+    color: #0e3835 !important; /* Change arrow color */
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    color: #0e3835 !important; /* Change arrow icon color */
+}
+
+
 
     
