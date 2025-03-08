@@ -29,7 +29,8 @@
     "rating": 4.8,
     "images": [
       "service_provider/workprofile3.png",
-      "service_provider/workprofile3_1.jpg"
+      "service_provider/workprofile3_1.jpg",
+      "service_provider/workprofile3_2.jpg"
     ],
     "description": "Skilled painter specializing in home and commercial projects.",
     "category": "Painter"
@@ -103,7 +104,9 @@
     "rating": 4.7,
     "images": [
       "service_provider/workprofile9.png",
-      "service_provider/workprofile9_1.jpg"
+      "service_provider/workprofile9_1.jpg",
+      "service_provider/workprofile9_2.jpg"
+
     ],
     "description": "Expert in deep cleaning and sanitation services.",
     "category": "Cleaner"
@@ -114,18 +117,22 @@
     "rating": 4.6,
     "images": [
       "service_provider/workprofile10.jpg",
-      "service_provider/workprofile10_1.jpg"
+      "service_provider/workprofile10_1.jpg",
+      "service_provider/workprofile10_2.jpg"
+
     ],
     "description": "Professional chef with a passion for culinary excellence.",
     "category": "Chef"
   },
   {
-    "name": "Jessica F.",
+    "name": "James F.",
     "location": "Jaffna",
     "rating": 4.5,
     "images": [
       "service_provider/workprofile11.jpg",
-      "service_provider/workprofile11_1.png"
+      "service_provider/workprofile11_1.jpg",
+      "service_provider/workprofile11_2.jpg"
+
     ],
     "description": "Skilled painter specializing in home and commercial projects.",
     "category": "Painter"
@@ -161,7 +168,9 @@
     "rating": 4.5,
     "images": [
       "service_provider/workprofile14.png",
-      "service_provider/workprofile15.jpg"
+      "service_provider/workprofile14_1.jpg",
+      "service_provider/workprofile14_2.jpg"
+
     ],
     "description": "Beauty expert providing salon-quality treatments.",
     "category": "Beautician"
