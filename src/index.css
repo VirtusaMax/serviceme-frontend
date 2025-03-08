@@ -47,6 +47,9 @@ html {    scrollbar-width: none; /* Firefox */
     color: #0e3835 !important; /* Change arrow icon color */
 }
 
-
-
-    
+@media (min-width: 768px) {
+    .md\:max-w-md {
+        max-width: 28rem;
+        max-height: 28rem;
+    }
+}
