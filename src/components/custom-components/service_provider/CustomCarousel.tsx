@@ -5,23 +5,24 @@ interface CustomCarouselProps {
 }
 
 const CustomCarousel: React.FC<CustomCarouselProps> = ({ children }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
   const totalSlides = children.length;
+  const [activeIndex, setActiveIndex] = useState(0);
+  
+  // Generate random durations for each card (between 3s - 7s)
+  const slideDurations = Array.from({ length: totalSlides }, () =>
+    Math.floor(Math.random() * (7000 - 3000 + 1) + 3000)
+  );
 
   useEffect(() => {
-    const autoSlideTimeout = setTimeout(() => {
+    const timeout = setTimeout(() => {
       slideNext();
-    }, 5000);
+    }, slideDurations[activeIndex]); // Use specific duration for current slide
 
-    return () => clearTimeout(autoSlideTimeout);
+    return () => clearTimeout(timeout);
   }, [activeIndex]);
 
   const slideNext = () => {
     setActiveIndex((prev) => (prev + 1) % totalSlides);
-  };
-
-  const slidePrev = () => {
-    setActiveIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
   return (
@@ -37,26 +38,12 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ children }) => {
         ))}
       </div>
 
-      {/* Navigation Buttons */}
-      <button
-        onClick={slidePrev}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 transition"
-      >
-        ❮
-      </button>
-      <button
-        onClick={slideNext}
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-900 transition"
-      >
-        ❯
-      </button>
-
       {/* Dots Navigation */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-2">
-        {Array.from({ length: totalSlides }).map((_, index) => (
+        {children.map((_, index) => (
           <button
             key={index}
-            className={`w-1 h-2 rounded-full ${
+            className={`w-3 h-3 rounded-full ${
               activeIndex === index ? "bg-white" : "bg-gray-500"
             }`}
             onClick={() => setActiveIndex(index)}
