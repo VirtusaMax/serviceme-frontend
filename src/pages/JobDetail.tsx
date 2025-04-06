@@ -139,7 +139,7 @@ const JobDetail = () => {
                       className="flex items-center justify-between cursor-pointer"
                       onClick={() => toggleResponse(index)}
                     >
-                      <p className="text-gray-600 font-medium">Seller's Response</p>
+                      <p className="text-gray-600 font-medium">Service provider's Response</p>
                       <span className="text-xl text-gray-600">
                         {visibleResponses[index] ? <FiMinusCircle /> : <FiPlusCircle />}
                       </span>
