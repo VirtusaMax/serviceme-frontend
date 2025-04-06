@@ -6,7 +6,7 @@
     "rating": 4.5,
     "image": "/service_provider/workprofile1.jpeg",
     "description": "Expert in deep cleaning and sanitation services.",
-    "about": "I have over 5 years of experience in deep cleaning and sanitation. I specialize in both residential and commercial cleaning, ensuring a spotless environment for my clients.",
+    "about": "With over 5 years of experience in deep cleaning and sanitation, I provide top-notch residential and commercial cleaning services. My goal is to create a spotless and hygienic environment for every client.",
     "category": "Cleaner",
     "reviews": [
       {
@@ -42,7 +42,7 @@
     "rating": 4.7,
     "image": "/service_provider/workprofile2.jpg",
     "description": "Professional chef with a passion for culinary excellence.",
-    "about": "I have over 5 years of experience in deep cleaning and sanitation. I specialize in both residential and commercial cleaning, ensuring a spotless environment for my clients.",
+    "about": "As a professional chef with a passion for culinary excellence, I bring over 5 years of experience in preparing high-quality meals. From gourmet dishes to home-style cooking, I ensure every meal is made to perfection.",
     "category": "Chef",
     "reviews": [
       {
@@ -78,6 +78,7 @@
     "rating": 4.8,
     "image": "/service_provider/workprofile3.png",
     "description": "Skilled painter specializing in home and commercial projects.",
+    "about":"I specialize in residential and commercial painting with a keen eye for detail. Whether you need a fresh coat of paint or a complete makeover, I deliver high-quality results that enhance any space.",
     "category": "Painter",
     "reviews": [
       {
