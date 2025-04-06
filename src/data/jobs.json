@@ -4,7 +4,12 @@
     "name": "Alice M.",
     "location": "Colombo",
     "rating": 4.5,
-    "image": "/service_provider/workprofile1.jpeg",
+     "images": [
+      "service_provider/workprofile1.jpeg",
+      "service_provider/workprofile1_1.jpg",
+      "service_provider/workprofile1_2.jpg"
+    ],
+ 
     "description": "Expert in deep cleaning and sanitation services.",
     "about": "With over 5 years of experience in deep cleaning and sanitation, I provide top-notch residential and commercial cleaning services. My goal is to create a spotless and hygienic environment for every client.",
     "category": "Cleaner",
@@ -40,7 +45,12 @@
     "name": "Chris L.",
     "location": "Kandy",
     "rating": 4.7,
-    "image": "/service_provider/workprofile2.jpg",
+     "images": [
+      "service_provider/workprofile2.jpg",
+      "service_provider/workprofile2_1.jpg",
+      "service_provider/workprofile2_2.jpg"
+    ],
+ 
     "description": "Professional chef with a passion for culinary excellence.",
     "about": "As a professional chef with a passion for culinary excellence, I bring over 5 years of experience in preparing high-quality meals. From gourmet dishes to home-style cooking, I ensure every meal is made to perfection.",
     "category": "Chef",
@@ -76,7 +86,13 @@
     "name": "Ben R.",
     "location": "Matara",
     "rating": 4.8,
-    "image": "/service_provider/workprofile3.png",
+ 
+    "images": [
+      "service_provider/workprofile3.png",
+      "service_provider/workprofile3_1.jpg",
+      "service_provider/workprofile3_2.jpg"
+    ],
+ 
     "description": "Skilled painter specializing in home and commercial projects.",
     "about":"I specialize in residential and commercial painting with a keen eye for detail. Whether you need a fresh coat of paint or a complete makeover, I deliver high-quality results that enhance any space.",
     "category": "Painter",
@@ -111,8 +127,14 @@
     "id": 4,
     "name": "Mark T.",
     "location": "Batticaloa",
-    "rating": 4.6,
-    "image": "/service_provider/workprofile4.png",
+    "rating": 4.6, 
+    "images": [
+      "service_provider/workprofile4.png",
+      "service_provider/workprofile4_1.jpg",
+      "service_provider/workprofile4_2.jpg"
+
+    ],
+ 
     "description": "Experienced mechanic for all vehicle repair needs.",
     "category": "Mechanic",
     "reviews": [
@@ -147,7 +169,15 @@
     "name": "Ryan D.",
     "location": "Colombo",
     "rating": 4.5,
-    "image": "/service_provider/workprofile5.png",
+ 
+    "images": [
+      "service_provider/workprofile5.png",
+      "service_provider/workprofile5_1.jpg",
+      "service_provider/workprofile5_2.jpg"
+
+    ],
+ 
+ 
     "description": "Certified plumber offering fast and reliable services.",
     "category": "Plumber",
     "reviews": [
@@ -182,7 +212,14 @@
     "name": "Lucy G.",
     "location": "Kandy",
     "rating": 4.4,
-    "image": "/service_provider/workprofile6.png",
+ 
+    "images": [
+      "service_provider/workprofile6.png",
+      "service_provider/workprofile6_1.jpg",
+      "service_provider/workprofile6_2.jpg"
+
+    ],
+ 
     "description": "Beauty expert providing salon-quality treatments.",
     "category": "Beautician",
     "reviews": [
@@ -217,7 +254,13 @@
     "name": "Monica L.",
     "location": "Colombo",
     "rating": 4.6,
-    "image": "/service_provider/workprofile7.png",
+ 
+    "images": [
+      "service_provider/workprofile7.png",
+      "service_provider/workprofile7_1.jpg",
+      "service_provider/workprofile7_2.jpg"
+    ],
+ 
     "description": "Loving and experienced childcare provider.",
     "category": "ChildCare",
     "reviews": [
@@ -252,7 +295,13 @@
     "name": "Daniel A.",
     "location": "Batticaloa",
     "rating": 4.5,
-    "image": "/service_provider/workprofile8.jpg",
+ 
+    "images": [
+      "service_provider/workprofile8.jpg",
+      "service_provider/workprofile8_1.jpg",
+      "service_provider/workprofile8_2.jpg"
+    ],
+ 
     "description": "Professional driver ensuring safe and comfortable rides.",
     "category": "Driver",
     "reviews": [
@@ -287,7 +336,14 @@
     "name": "James T.",
     "location": "Galle",
     "rating": 4.7,
-    "image": "/service_provider/workprofile9.png",
+ 
+    "images": [
+      "service_provider/workprofile9.png",
+      "service_provider/workprofile9_1.jpg",
+      "service_provider/workprofile9_2.jpg"
+
+    ],
+ 
     "description": "Expert in deep cleaning and sanitation services.",
     "category": "Cleaner",
     "reviews": [
@@ -322,7 +378,14 @@
     "name": "Tina W.",
     "location": "Kurunegala",
     "rating": 4.6,
-    "image": "/service_provider/workprofile10.jpg",
+ 
+    "images": [
+      "service_provider/workprofile10.jpg",
+      "service_provider/workprofile10_1.jpg",
+      "service_provider/workprofile10_2.jpg"
+
+    ],
+ 
     "description": "Professional chef with a passion for culinary excellence.",
     "category": "Chef",
     "reviews": [
@@ -354,10 +417,18 @@
   },
   {
     "id": 11,
-    "name": "Jessica F.",
+    "name": "James F.",
     "location": "Jaffna",
     "rating": 4.5,
-    "image": "/service_provider/workprofile11.jpg",
+ 
+    "images": [
+      "service_provider/workprofile11.jpg",
+      "service_provider/workprofile11_1.jpg",
+      "service_provider/workprofile11_2.jpg"
+
+    ],
+ 
+ 
     "description": "Skilled painter specializing in home and commercial projects.",
     "category": "Painter",
     "reviews": [
@@ -392,7 +463,14 @@
     "name": "Sam W.",
     "location": "Negombo",
     "rating": 4.8,
-    "image": "/service_provider/workprofile12.png",
+ 
+    "images": [
+      "service_provider/workprofile12.png",
+      "service_provider/workprofile12_1.png",
+      "service_provider/workprofile12_2.jpg"
+
+    ],
+ 
     "description": "Experienced mechanic for all vehicle repair needs.",
     "category": "Mechanic",
     "reviews": [
@@ -427,7 +505,13 @@
     "name": "Alex P.",
     "location": "Galle",
     "rating": 4.7,
-    "image": "/service_provider/workprofile13.png",
+ 
+    "images": [
+      "service_provider/workprofile13.png",
+      "service_provider/workprofile13_1.png",
+      "service_provider/workprofile13_2.jpg"
+    ],
+ 
     "description": "Certified plumber offering fast and reliable services.",
     "category": "Plumber",
     "reviews": [
@@ -462,7 +546,14 @@
     "name": "Sophia M.",
     "location": "Kurunegala",
     "rating": 4.5,
-    "image": "/service_provider/workprofile14.png",
+ 
+    "images": [
+      "service_provider/workprofile14.png",
+      "service_provider/workprofile14_1.jpg",
+      "service_provider/workprofile14_2.jpg"
+
+    ],
+ 
     "description": "Beauty expert providing salon-quality treatments.",
     "category": "Beautician",
     "reviews": [
@@ -497,7 +588,12 @@
     "name": "Emily H.",
     "location": "Matara",
     "rating": 4.6,
-    "image": "/service_provider/workprofile15.png",
+     "images": [
+      "service_provider/workprofile15.png",
+      "service_provider/workprofile15_1.jpg",
+      "service_provider/workprofile15_2.jpg"
+    ],
+ 
     "description": "Loving and experienced childcare provider.",
     "category": "ChildCare",
     "reviews": [
@@ -532,7 +628,13 @@
     "name": "Jack B.",
     "location": "Galle",
     "rating": 4.9,
-    "image": "/service_provider/workprofile16.png",
+ 
+    "images": [
+      "service_provider/workprofile16.png",
+      "service_provider/workprofile16_1.jpg",
+      "service_provider/workprofile16_2.jpg"
+    ],
+ 
     "description": "Professional driver ensuring safe and comfortable rides.",
     "category": "Driver",
     "reviews": [
