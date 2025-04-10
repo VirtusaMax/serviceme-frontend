@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className=" bg-[#0E0524] flex flex-col md:flex-row h-[800px] md:h-[650px] justify-center items-center">
       {/* Left Section */}
-      <div className="relative flex flex-col justify-center py-20 px-6 md:pr-16 xl:pr-40 md:py-0 md:w-1/2 top-16 md:top-6">
+      <div className="relative flex flex-col justify-center py-20 px-6 md:pr-16 xl:pr-40 md:py-0 md:w-1/2 top-16 md:top-8">
         <div className="text-center text-white md:text-left space-y-4">
           <p className="text-3xl md:text-5xl font-semibold lg:text-6xl">
             Your Trusted Partner for Home Services
