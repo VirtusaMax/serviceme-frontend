@@ -1,44 +1,92 @@
 [
   {
     "name": "Jessica",
-     "img": "src/assets/images/register_section/women4.png"
+    "img": "register_section/women4.png",
+    "role": "Home Cleaner",
+    "location": "Nattandiya",
+    "contact": "+94 23 456 789",
+    "rating": 4.7,
+    "reviews": 95
   },
-    {
-      "name": "Alex B.",
-      "img": "src/assets/images/register_section/man1.png"
-    },
-    
-    {
-      "name": "Chamen",
-      "img": "src/assets/images/register_section/man3.png"
-    },
-    {
-      "name": "Jacob",
-      "img": "src/assets/images/register_section/man2.png"
-    },
-    {
-      "name": "Jonathan",
-      "img": "src/assets/images/register_section/womenn1.png"
-    },
-    {
-      "name": "Jessica",
-      "img": "src/assets/images/register_section/women3.png"
-    },
-    {
-      "name": "Alex B.",
-      "img": "src/assets/images/register_section/women2.png"
-    },
-    
-    {
-      "name": "Chamen",
-      "img": "src/assets/images/register_section/women3.png"
-    },
-    {
-      "name": "Jacob",
-      "img": "src/assets/images/register_section/man1.png"
-    },
-    {
-      "name": "Jonathan",
-      "img": "src/assets/images/register_section/man4.png"
-    }
-  ]
+  {
+    "name": "Alex B.",
+    "img": "register_section/man1.png",
+    "role": "Cleaner",
+    "location": "Kottawa",
+    "contact": "+94  234 567 890",
+    "rating": 4.8,
+    "reviews": 120
+  },
+  {
+    "name": "Chamen",
+    "img": "register_section/man3.png",
+    "role": "Oil Change Specialist",
+    "location": "Katuneriya",
+    "contact": "+94  345 678 901",
+    "rating": 4.6,
+    "reviews": 85
+  },
+  {
+    "name": "Jacob",
+    "img": "register_section/man2.png",
+    "role": "Tire Technician",
+    "location": "Kuliyapitiya",
+    "contact": "+94  456 789 012",
+    "rating": 4.9,
+    "reviews": 130
+  },
+  {
+    "name": "Jonathan",
+    "img": "register_section/womenn1.png",
+    "role": "Battery Replacement Expert",
+    "location": "Negombo",
+    "contact": "+94  567 890 123",
+    "rating": 4.5,
+    "reviews": 78
+  },
+  {
+    "name": "Jessica",
+    "img": "register_section/women3.png",
+    "role": "Car Detailer",
+    "location": "Diyagama",
+    "contact": "+94  678 901 234",
+    "rating": 4.8,
+    "reviews": 102
+  },
+  {
+    "name": "Alex B.",
+    "img": "register_section/women2.png",
+    "role": "Mechanic",
+    "location": "Kottawa",
+    "contact": "+94  789 012 345",
+    "rating": 4.7,
+    "reviews": 88
+  },
+  {
+    "name": "Chamen",
+    "img": "register_section/women3.png",
+    "role": "Oil Change Specialist",
+    "location": "Maharagama",
+    "contact": "+94  890 123 456",
+    "rating": 4.6,
+    "reviews": 92
+  },
+  {
+    "name": "Jacob",
+    "img": "register_section/man1.png",
+    "role": "Tire Technician",
+    "location": "Malabe",
+    "contact": "+94  901 234 567",
+    "rating": 4.9,
+    "reviews": 105
+  },
+  {
+    "name": "Jonathan",
+    "img": "register_section/man4.png",
+    "role": "Chef",
+    "location": "Wennappuwa",
+    "contact": "+94  012 345 678",
+    "rating": 4.5,
+    "reviews": 80
+  }
+]
